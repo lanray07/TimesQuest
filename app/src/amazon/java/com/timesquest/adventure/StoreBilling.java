@@ -60,6 +60,7 @@ final class StoreBilling implements Billing, PurchasingListener {
   final Gateway gateway;
   String user = "", localPrice = "", status = "store_connecting";
   boolean configured, validUser, confirmedUser, productAvailable, purchaseInFlight, pendingPurchase;
+  boolean ownershipConfirmed;
   RequestId userRequest, productRequest, purchaseRequest, restoreRequest;
   EntitlementRestore restored;
   final Map<String, Receipt> restoreReceipts = new LinkedHashMap<>();
@@ -108,7 +109,8 @@ final class StoreBilling implements Billing, PurchasingListener {
         && confirmedUser
         && productAvailable
         && !purchaseInFlight
-        && !pendingPurchase
+        && ownershipConfirmed
+        && restoreRequest == null
         && !entitled();
   }
 
@@ -127,6 +129,7 @@ final class StoreBilling implements Billing, PurchasingListener {
   public void refresh() {
     if (!configured || purchaseInFlight) return;
     confirmedUser = false;
+    ownershipConfirmed = false;
     productAvailable = false;
     localPrice = "";
     status = "store_connecting";
@@ -154,6 +157,7 @@ final class StoreBilling implements Billing, PurchasingListener {
 
   public void restore() {
     if (!configured || !confirmedUser || purchaseInFlight) return;
+    ownershipConfirmed = false;
     restored = new EntitlementRestore(user, SKU);
     restoreReceipts.clear();
     status = "store_restoring";
@@ -291,6 +295,10 @@ final class StoreBilling implements Billing, PurchasingListener {
       }
     } else {
       boolean saved = persistOwnership(owner, restored.owned());
+      // Amazon sends no receipt for declined/expired requests. Pending is informational:
+      // after a complete, durable snapshot, parents may explicitly try checkout again.
+      // Only a valid receipt grants ownership; in-flight checkout still blocks duplicates.
+      ownershipConfirmed = saved;
       restoreRequest = null;
       if (saved && restored.owned()) pendingPurchase = false;
       status =

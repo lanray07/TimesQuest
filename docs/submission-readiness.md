@@ -22,13 +22,13 @@
 | Core Java learning/voice/entitlement tests | 16 | Passed |
 | Standalone debug Android host tests/native renders | 23 | Passed |
 | Standalone release Android host tests | 20 | Passed |
-| Amazon adapter host tests | 11 | Passed |
+| Amazon adapter host tests | 14 | Passed |
 | Python localisation/transport/review tests | 11 | Passed |
 | Website HTML/array/configuration/server tests | 9 | Passed |
 | Standalone and Amazon lint | — | No issues |
 | Debug/release/instrumentation assembly | — | Passed |
 
-The 70 JVM executions include repeated scenarios under debug and release configurations. There are **90 successful local test executions in total**, not 90 physical-device scenarios. Evidence is in `build-artifacts.json`, `artifacts/verification.json`, Gradle XML reports and logs. GitHub CI is triggered by the authorised source push; consult Actions for its actual result.
+The 73 JVM executions include repeated scenarios under debug and release configurations. There are **93 successful local test executions in total**, not 93 physical-device scenarios. Evidence is in `build-artifacts.json`, `artifacts/verification.json`, Gradle XML reports and logs. GitHub CI is triggered by the authorised source push; consult Actions for its actual result.
 
 Robolectric uses framework shadows/native host graphics, not a Fire OS image. SDK host tests instrument Amazon classes so its bytecode can run on the JVM; the production SDK is unmodified. Upstream Amazon D8 stack-map warnings remain in assembly output. No deployed SDK/platform certification is inferred.
 
@@ -37,7 +37,7 @@ Robolectric uses framework shadows/native host graphics, not a Fire OS image. SD
 The precise owner inputs are listed in [needed-from-owner.md](needed-from-owner.md):
 
 1. Cleared/replacement name, actual publisher/contact/domain/launch-country details, and launch languages.
-2. Signed-candidate Live App Testing results; physical debug App Tester cases now passed, with a pending-decline retry limitation. The public Amazon PEM is installed; the signed APK has been accepted into the Amazon draft, the SKU/price draft is complete, and all Amazon-supported countries are owner-approved. See amazon-console-draft.md.
+2. Signed-candidate Live App Testing results; physical debug App Tester cases including declined-pending retry now passed. The public Amazon PEM is installed; the signed APK has been accepted into the Amazon draft, the SKU/price draft is complete, and all Amazon-supported countries are owner-approved. See amazon-console-draft.md.
 3. Owner backup of the dedicated TimesQuest signing key/password. Key creation, signed build, signature/alignment verification and draft upload are complete; see release-signing.md and signed-release.json. Only the standalone release remains unsigned.
 4. Remaining device validation: a physical KFTRWI Fire now passed three free signed-release missions, hint/correction, force-stop recovery and an offline launch/question check. The isolated physical-device instrumentation also passed all six modes, first-answer tracking, rewards, save/reload and deletion. Four authentic tablet captures are uploaded and Amazon shows Ready to Submit. Offline speech and focused VoiceView/large-text checks now passed. Broader accessibility, sustained performance, other models and signed LAT validation remain; see fire-device-qa-2026-10-17.md.
 5. Human educational/narration review and reviewed translations/evidence for additional launch languages.
@@ -54,4 +54,6 @@ Six Android outputs have paths, sizes and SHA-256 in `build-artifacts.json`: sta
 
 The [existing name-use finding](https://www.sparkanvil.org/apps/timesquest/), [Amazon image/metadata requirements](https://developer.amazon.com/docs/app-submission/appstore-details.html), [public-key setup](https://developer.amazon.com/docs/appstore-sdk/integrate-appstore-sdk.html) and [Fire/general-Android distribution distinction](https://developer.amazon.com/apps-and-games/blogs/2025/02/upcoming-changes-to-amazon-appstore-for-android-devices-and-coins-program) remain documented. Recheck immediately before submission; no legal clearance or certification is inferred.
 
-Current candidate: signed 0.1.2 / code 3 accepted by Amazon draft, with foreground billing refresh fixed. Extended physical results, single startup/memory samples, sandbox coverage and the remaining declined-pending retry limitation: [fire-extended-qa-2026-10-17.md](fire-extended-qa-2026-10-17.md). The Python/website results above are unchanged prior executions; this pass reran the affected JVM suites and Amazon release lint/build.
+Previous 0.1.2 results, single startup/memory samples and sandbox coverage: [fire-extended-qa-2026-10-17.md](fire-extended-qa-2026-10-17.md). The Python/website results above are unchanged prior executions; this pass reran the affected JVM suites and Amazon release lint/build.
+
+Current candidate: signed **0.1.3 / code 4** accepted into the Amazon draft; declined/expired pending requests can retry after a successful ownership snapshot. Physical Fire decline -> same-process retry -> receipt/FULFILLED passed. Four screenshots and saved privacy disclosures retained; no submission. See [retry QA](fire-pending-retry-2026-10-17.md). This pass reran all 14 Amazon adapter tests, core and standalone release tests, and Amazon release lint/build. Other unchanged suite counts are prior passing executions.

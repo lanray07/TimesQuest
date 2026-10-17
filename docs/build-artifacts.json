@@ -3,14 +3,14 @@
   "artifacts": [
     {
       "path": "app/build/outputs/apk/amazon/debug/app-amazon-debug.apk",
-      "bytes": 3319098,
-      "sha256": "297a8dc1c5bd9bd91515fd98678de645aad39ea95ce32e6d6141cfe8b156fbe6",
+      "bytes": 3319134,
+      "sha256": "ff5e8eb5eb3090d80323e7b2a585dfce3ce7af4f781e85f4c18f31db4c19d294",
       "signing": "Android debug certificate"
     },
     {
       "path": "app/build/outputs/apk/amazon/release/app-amazon-release.apk",
-      "bytes": 3269583,
-      "sha256": "8165df2eae57aab02adf88d1f502e20623328e29ec2d4abead4e33c9907e3653",
+      "bytes": 3269579,
+      "sha256": "8fec0b64c49c34fdcbcdbd57221bba706ce28e5df255e50274985e0d671e6e82",
       "signing": "Dedicated TimesQuest release certificate: b0582cdf6eeb641b6a6fd96c3ba697c0f07bba60980ef72466d1eb53e7d15966"
     },
     {
@@ -74,7 +74,7 @@
     {
       "configuration": "testAmazonDebugUnitTest",
       "name": "com.timesquest.adventure.AmazonBillingHostTest",
-      "tests": "11",
+      "tests": "14",
       "failures": "0",
       "errors": "0",
       "skipped": "0"
@@ -152,9 +152,9 @@
       "skipped": "0"
     }
   ],
-  "jvmExecutions": 70,
+  "jvmExecutions": 73,
   "deviceTests": "Physical KFTRWI release UI and isolated instrumentation checks passed within documented scope; docs/fire-extended-qa-2026-10-17.md",
-  "purchaseTests": "Physical App Tester debug mock success/cancel/restore/refund/account/pending approval passed; declined-pending retry requires relaunch; signed LAT outstanding; no real payment",
+  "purchaseTests": "Physical App Tester debug mock success/cancel/restore/refund/account/pending approval passed; declined-pending same-process retry/success/FULFILLED passed; signed LAT outstanding; no real payment",
   "voiceTests": "Offline Ivona/Amy narration and VoiceView labels owner-confirmed; physical synthesis/background stop passed; API 28 cannot run on-device microphone recognition",
   "website": "20 static pages and nine automated website tests passed",
   "localisation": "English structural/host checks only; no locale has completed human/device release approval"

@@ -57,7 +57,7 @@ public class AmazonBillingHostTest {
   }
 
   @Test
-  public void pendingPurchaseCannotUnlockOrStartAnotherCheckout() {
+  public void pendingPurchaseStaysLockedUntilReceiptAndReconcilesBeforeRetry() {
     user("a");
     updates("a", false);
     product();
@@ -71,7 +71,76 @@ public class AmazonBillingHostTest {
     assertFalse(billing.canPurchase());
     updates("a", false);
     assertEquals("purchase_pending", billing.statusKey());
+    assertTrue(billing.canPurchase());
+    assertFalse(billing.entitled());
+  }
+
+  @Test
+  public void declinedOrExpiredPendingRequestCanRetryWithoutRestart() {
+    user("a");
+    updates("a", false);
+    product();
+    billing.purchase();
+    billing.onPurchaseResponse(
+        new PurchaseResponseBuilder()
+            .setRequestId(gateway.purchase)
+            .setRequestStatus(PurchaseResponse.RequestStatus.PENDING)
+            .build());
+    updates("a", false);
+    // Amazon returns no receipt or decline notification for a declined/expired request.
+    user("a");
+    product();
+    updates("a", false);
+    assertFalse(billing.entitled());
+    assertTrue(
+        "A settled pending request must not permanently disable parent retry",
+        billing.canPurchase());
+    billing.purchase();
+    billing.purchase();
+    assertEquals(2, gateway.purchases);
+    assertFalse(billing.entitled());
     assertFalse(billing.canPurchase());
+  }
+
+  @Test
+  public void retryRequiresSuccessfulCompleteOwnershipSnapshot() {
+    user("a");
+    product();
+    assertFalse(billing.canPurchase());
+    updates("a", true);
+    assertFalse(billing.canPurchase());
+    billing.onPurchaseUpdatesResponse(
+        new PurchaseUpdatesResponseBuilder()
+            .setRequestId(gateway.updates)
+            .setRequestStatus(PurchaseUpdatesResponse.RequestStatus.FAILED)
+            .build());
+    assertFalse(billing.canPurchase());
+    billing.restore();
+    updates("a", false);
+    assertTrue(billing.canPurchase());
+  }
+
+  @Test
+  public void cancellingRetryDoesNotGrantOwnershipOrBlockNextAttempt() {
+    user("a");
+    updates("a", false);
+    product();
+    billing.purchase();
+    billing.onPurchaseResponse(
+        new PurchaseResponseBuilder()
+            .setRequestId(gateway.purchase)
+            .setRequestStatus(PurchaseResponse.RequestStatus.PENDING)
+            .build());
+    updates("a", false);
+    billing.purchase();
+    billing.onPurchaseResponse(
+        new PurchaseResponseBuilder()
+            .setRequestId(gateway.purchase)
+            .setRequestStatus(PurchaseResponse.RequestStatus.FAILED)
+            .build());
+    assertFalse(billing.entitled());
+    assertTrue(billing.canPurchase());
+    assertTrue(gateway.fulfilled.isEmpty());
   }
 
   Activity activity;

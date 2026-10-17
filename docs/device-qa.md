@@ -1,4 +1,4 @@
-Follow-up: [extended Fire QA](fire-extended-qa-2026-10-17.md) records offline speech and VoiceView listening confirmation, 200% text/rotation, device diagnostics and actual debug App Tester coverage. Signed 0.1.2 is installed and uploaded; LAT and the declined-pending retry limitation remain. Historical pending rows below are superseded only by those specific results.
+Follow-up: [extended Fire QA](fire-extended-qa-2026-10-17.md) records offline speech and VoiceView listening confirmation, 200% text/rotation, device diagnostics and actual debug App Tester coverage. Signed 0.1.3 is installed and uploaded; declined-pending retry now passes without restart ([evidence](fire-pending-retry-2026-10-17.md)). Signed LAT remains outstanding. Historical pending rows below are superseded only by those specific results.
 
 # Device and feature validation
 
