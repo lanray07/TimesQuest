@@ -6,7 +6,7 @@
   "testNumber": 1,
   "testName": "TimesQuest 0.1.3 - Fire purchase checks",
   "testChannel": "amzn1.channel.123ed68a836f4209bc6e2c7dd59127ab",
-  "testStatus": "Test submitted",
+  "testStatus": "Test in-progress",
   "versionName": "0.1.3",
   "versionCode": 4,
   "apkSha256": "8fec0b64c49c34fdcbcdbd57221bba706ce28e5df255e50274985e0d671e6e82",
@@ -14,11 +14,11 @@
   "iapSku": "timesquest.premium",
   "iapSubmission": "Submit to Test only",
   "iapStatus": "Approved; TEST label",
-  "testersAssigned": 0,
+  "testersAssigned": 1,
   "invitationsSent": 0,
   "testAccountDetails": "Owner supplied identity, explicitly confirmed rights/communications consent/age 18+, and dedicated TimesQuest group saved with the matching existing tester. Private identity omitted from repository.",
   "purchaseChecks": "Not yet run in signed Amazon LAT distribution",
-  "proof": "artifacts/lat-setup/tester-group-saved.png",
+  "proof": "artifacts/lat-setup/invitation-status.png",
   "sources": [
     "https://developer.amazon.com/docs/app-testing/live-app-testing-getting-started.html",
     "https://developer.amazon.com/docs/in-app-purchasing/iap-lat.html",
@@ -28,5 +28,7 @@
   "testerGroupPrepared": "TimesQuest Fire Purchase Test",
   "testerGroupSaved": true,
   "testerGroupMembers": 1,
-  "assignmentBlocker": "LAT Test 1 remains Test submitted; Manage testers is disabled until Amazon finishes publishing the private test."
+  "assignmentBlocker": null,
+  "invitationsQueued": 1,
+  "invitationStatus": "Pending"
 }
