@@ -7,7 +7,7 @@ Implemented:
 - Shared 1–12 multiplication engine: 144 facts, unique choices, equal groups, arrays, repeated addition, skip counting, fact families, mistake-specific hints, adaptive selection and spaced review.
 - Four connected islands; five-step missions, crystals, unlock thresholds, local badges, companion colours and persistent sessions.
 - Six mission types: friendly battles, treasure locks, stepping-stone jumps, racing, equal-scoop recipes and robot assembly.
-- Parent dashboard, deletion, sound/narration/reduced-motion settings and protected purchase access. No child accounts, adverts, analytics, chat or child-facing external links.
+- Parent dashboard, deletion, sound/narration/reduced-motion settings and protected purchase access. No child accounts, adverts, chat or child-facing external links. Learning records remain local; Amazon SDK store telemetry is disclosed separately in the privacy notice.
 - Android offline TextToSpeech and optional parent-enabled on-device push-to-talk with complete touch fallback. Hardware speech behaviour remains unverified.
 - Real Amazon SDK integration for product prices, non-consumable receipts and paginated purchase restoration. Store access stays unavailable until the app-specific public key and product are configured. No purchases were made.
 - Original generated world artwork, procedural character animation, original vector icon and synthesised sound effects.

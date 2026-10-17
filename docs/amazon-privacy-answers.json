@@ -1,0 +1,504 @@
+{
+  "date": "2026-10-17",
+  "scope": "Amazon draft questionnaire; no app or IAP submitted",
+  "answers": [
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Name-User Info-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Name-User Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Email Address-User Info-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Email Address-User Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-User IDs-User Info-Collected",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-User IDs-User Info-Shared",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Address-User Info-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Address-User Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Phone number-User Info-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Phone number-User Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Race and ethnicity-User Info-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Race and ethnicity-User Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Sexual orientation-User Info-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Sexual orientation-User Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Political or religious beliefs-User Info-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Political or religious beliefs-User Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other user info-User Info-Collected",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other user info-User Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-User payment info-Financial Info-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-User payment info-Financial Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Purchase history-Financial Info-Collected",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Purchase history-Financial Info-Shared",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Credit score-Financial Info-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Credit score-Financial Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other financial info-Financial Info-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other financial info-Financial Info-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Device or other ID-Device or other IDs-Collected",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Device or other ID-Device or other IDs-Shared",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Advertising ID-Device or other IDs-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Advertising ID-Device or other IDs-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Health & Biometrics Info-Health & Fitness-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Health & Biometrics Info-Health & Fitness-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Fitness info-Health & Fitness-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Fitness info-Health & Fitness-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Approximate location-Location-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Approximate location-Location-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Precise location-Location-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Precise location-Location-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Web browsing history-Web browsing-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Web browsing history-Web browsing-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Photos-Photos or videos-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Photos-Photos or videos-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Videos-Photos or videos-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Videos-Photos or videos-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Voice or sound recordings-Audio files-Collected",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Voice or sound recordings-Audio files-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Music files-Audio files-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Music files-Audio files-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other audio files-Audio files-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other audio files-Audio files-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Crash logs-App info & performance-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Crash logs-App info & performance-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Diagnostics-App info & performance-Collected",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Diagnostics-App info & performance-Shared",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other app performance data-App info & performance-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other app performance data-App info & performance-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-App interactions-App activity-Collected",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-App interactions-App activity-Shared",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-In-app search history-App activity-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-In-app search history-App activity-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Installed apps-App activity-Collected",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Installed apps-App activity-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other user-generated content-App activity-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other user-generated content-App activity-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other actions-App activity-Collected",
+      "yes": true
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other actions-App activity-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Emails-Messages-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Emails-Messages-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-SMS or MMS-Messages-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-SMS or MMS-Messages-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other in-app messages-Messages-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Other in-app messages-Messages-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Files and doc-Files and docs-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Files and doc-Files and docs-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Calendar events-Calendar-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Calendar events-Calendar-Shared",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Contacts / Phone Logs-Contacts-Collected",
+      "yes": false
+    },
+    {
+      "answered": true,
+      "id": "metadata-MAS-7711230-Contacts / Phone Logs-Contacts-Shared",
+      "yes": false
+    }
+  ],
+  "purposes": [
+    {
+      "id": "metadata-MAS-7711230-User IDs-User Info-Collected",
+      "purposes": [
+        "App functionality",
+        "Fraud Prevention, Security and Compliance"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-User IDs-User Info-Shared",
+      "purposes": [
+        "App functionality",
+        "Fraud Prevention, Security and Compliance"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-Other user info-User Info-Collected",
+      "purposes": [
+        "App functionality"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-Purchase history-Financial Info-Collected",
+      "purposes": [
+        "App functionality",
+        "Analytics",
+        "Fraud Prevention, Security and Compliance"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-Purchase history-Financial Info-Shared",
+      "purposes": [
+        "App functionality",
+        "Analytics",
+        "Fraud Prevention, Security and Compliance"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-Device or other ID-Device or other IDs-Collected",
+      "purposes": [
+        "App functionality",
+        "Analytics",
+        "Fraud Prevention, Security and Compliance"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-Device or other ID-Device or other IDs-Shared",
+      "purposes": [
+        "App functionality",
+        "Analytics",
+        "Fraud Prevention, Security and Compliance"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-Voice or sound recordings-Audio files-Collected",
+      "purposes": [
+        "App functionality"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-Diagnostics-App info & performance-Collected",
+      "purposes": [
+        "App functionality",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-Diagnostics-App info & performance-Shared",
+      "purposes": [
+        "App functionality",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-App interactions-App activity-Collected",
+      "purposes": [
+        "App functionality",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-App interactions-App activity-Shared",
+      "purposes": [
+        "App functionality",
+        "Analytics"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-Installed apps-App activity-Collected",
+      "purposes": [
+        "App functionality",
+        "Fraud Prevention, Security and Compliance"
+      ]
+    },
+    {
+      "id": "metadata-MAS-7711230-Other actions-App activity-Collected",
+      "purposes": [
+        "App functionality",
+        "Personalization"
+      ]
+    }
+  ],
+  "status": "Saved for review",
+  "appVersionCode": 2,
+  "appVersionName": "0.1.1",
+  "amazonSdkVersion": "3.0.9",
+  "amazonSdkSha256": "a179aaeec903d6a871dec732d94f16c67d12691fd0aa076995bd3943dc79ca09",
+  "privacyTextSha256": "e698208788915f6f5ff4244d77f0d9fb683f003821b4c7d4fa535d45be995349"
+}

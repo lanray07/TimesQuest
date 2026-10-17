@@ -3,14 +3,14 @@
   "artifacts": [
     {
       "path": "app/build/outputs/apk/amazon/debug/app-amazon-debug.apk",
-      "bytes": 3333280,
-      "sha256": "6dfb8b17bfdc55c0bb308160d1d1ec8f8e87985320c27d849d38a9e92379462a",
+      "bytes": 3319082,
+      "sha256": "f066bda27cc9d68dde7e1ff42cd1a6ef89708cb39192a2dacb3a38b3644f94e4",
       "signing": "Android debug certificate"
     },
     {
       "path": "app/build/outputs/apk/amazon/release/app-amazon-release.apk",
-      "bytes": 3269387,
-      "sha256": "463e19f88a3d20f589c53d0ee1c7215bff874bab6a5713767879ccfdfb841f68",
+      "bytes": 3269603,
+      "sha256": "ada6347026f124ec27fd4aab306cf5524749f65674bdec2b0336ea376ce2bebc",
       "signing": "Dedicated TimesQuest release certificate: b0582cdf6eeb641b6a6fd96c3ba697c0f07bba60980ef72466d1eb53e7d15966"
     },
     {
@@ -21,14 +21,14 @@
     },
     {
       "path": "app/build/outputs/apk/standalone/debug/app-standalone-debug.apk",
-      "bytes": 3146677,
-      "sha256": "8f881abf11342b8c80af53d2cffa438de29556c20a72ce980c4242ca62a5e8a1",
+      "bytes": 3133686,
+      "sha256": "f4f205042a92d46bb42008a5d132bf12922868e28be991202e97d18fd30125a4",
       "signing": "Android debug certificate"
     },
     {
       "path": "app/build/outputs/apk/standalone/release/app-standalone-release-unsigned.apk",
-      "bytes": 3110245,
-      "sha256": "6ad1004e585a45a6fe009518d2d734b378f8a1de73d774e9137a9c62a9cda544",
+      "bytes": 3110525,
+      "sha256": "f3572c95b9eede646e2456a328b33433e83b0045ae30196f08581d0573ffd9e7",
       "signing": "unsigned release candidate"
     }
   ],

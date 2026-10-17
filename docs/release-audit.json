@@ -7,6 +7,11 @@
       "needed": null
     },
     {
+      "check": "SDK privacy questionnaire evidence",
+      "passed": true,
+      "needed": null
+    },
+    {
       "check": "Publisher release signing",
       "passed": true,
       "needed": null
@@ -19,7 +24,7 @@
     {
       "check": "English human review record",
       "passed": false,
-      "needed": "Provide named reviewers and actual evidence, matching the current source and translation hashes. Details: A named human reviewer is required; education: an existing review evidence file within the repo is required; narration: an existing review evidence file within the repo is required; gameplay: an existing review evidence file within the repo is required; voice: an existing review evidence file within the repo is required; screenshots: an existing review evidence file within the repo is required; Review does not match current source hash: 7926775345b5e6d3194aa2c05a17aa582fdd9973225607ceda1728bde9830c04; Review does not match current translation hash: 7926775345b5e6d3194aa2c05a17aa582fdd9973225607ceda1728bde9830c04"
+      "needed": "Provide named reviewers and actual evidence, matching the current source and translation hashes. Details: A named human reviewer is required; education: an existing review evidence file within the repo is required; narration: an existing review evidence file within the repo is required; gameplay: an existing review evidence file within the repo is required; voice: an existing review evidence file within the repo is required; screenshots: an existing review evidence file within the repo is required; Review does not match current source hash: 797038b30e0d5252c1df15ef39b4f553f901713998e27d3d3226f5103715c2bd; Review does not match current translation hash: 797038b30e0d5252c1df15ef39b4f553f901713998e27d3d3226f5103715c2bd"
     },
     {
       "check": "Authentic gameplay captures",
@@ -40,12 +45,12 @@
   "releasePackages": [
     {
       "file": "app/build/outputs/apk/amazon/release/app-amazon-release.apk",
-      "sha256": "463e19f88a3d20f589c53d0ee1c7215bff874bab6a5713767879ccfdfb841f68",
+      "sha256": "ada6347026f124ec27fd4aab306cf5524749f65674bdec2b0336ea376ce2bebc",
       "hasUsDraft": false
     },
     {
       "file": "app/build/outputs/apk/standalone/release/app-standalone-release-unsigned.apk",
-      "sha256": "6ad1004e585a45a6fe009518d2d734b378f8a1de73d774e9137a9c62a9cda544",
+      "sha256": "f3572c95b9eede646e2456a328b33433e83b0045ae30196f08581d0573ffd9e7",
       "hasUsDraft": false
     }
   ],

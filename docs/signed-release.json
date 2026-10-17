@@ -2,10 +2,10 @@
   "date": "2026-10-17",
   "path": "app/build/outputs/apk/amazon/release/app-amazon-release.apk",
   "package": "com.timesquest.adventure",
-  "versionCode": 1,
-  "versionName": "0.1.0",
-  "bytes": 3269387,
-  "sha256": "463e19f88a3d20f589c53d0ee1c7215bff874bab6a5713767879ccfdfb841f68",
+  "versionCode": 2,
+  "versionName": "0.1.1",
+  "bytes": 3269603,
+  "sha256": "ada6347026f124ec27fd4aab306cf5524749f65674bdec2b0336ea376ce2bebc",
   "signatureVerified": true,
   "alignmentVerified": true,
   "certificateSha256": "b0582cdf6eeb641b6a6fd96c3ba697c0f07bba60980ef72466d1eb53e7d15966",
@@ -17,7 +17,7 @@
   "publicAmazonKeyIncluded": true,
   "debugLocaleExcluded": true,
   "releaseTestsAndLint": "Passed; see artifacts/signed-release-build.log",
-  "uploadStatus": "Uploaded and accepted in the existing Amazon app draft; not submitted",
+  "uploadStatus": "Privacy-corrected version 0.1.1 / code 2 uploaded and accepted as replacement in existing Amazon draft; not submitted",
   "deviceTests": "Not run",
   "amazonAppId": "amzn1.devportal.mobileapp.a56d1e9d78304af2b803ff2217ce840b",
   "amazonReleaseId": "amzn1.devportal.apprelease.ef6d675ac85e42b999072bd68b5b8014",
@@ -26,5 +26,7 @@
     "fireTvProfiles": 0,
     "automotiveProfiles": 0,
     "status": "Amazon compatibility filtering only; physical-device validation outstanding"
-  }
+  },
+  "privacyNoticeVerified": true,
+  "privacyDisclosures": "39 data types / 78 answers and 14 purpose sections saved for review"
 }

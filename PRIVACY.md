@@ -8,7 +8,7 @@ TimesQuest is a multiplication game designed for children around 6–11. The dev
 
 The game stores multiplication attempts, first-answer correctness, use of hints, practice timing, review dates, mission progress, crystals, badges and settings in private app storage. These records help select practice questions, continue missions and show progress to a parent. They are practice indicators rather than a formal educational assessment.
 
-The game does not ask children for a name, email address, location, photo or profile. It has no child accounts, advertisements, analytics integration, social features, public profiles or cloud synchronisation. The app's learning records are not uploaded by TimesQuest. Android backup and device-transfer backup are disabled for app data.
+The game does not ask children for a name, email address, location, photo or profile. It has no child accounts, advertisements, social features, public profiles or cloud synchronisation. TimesQuest does not operate a learning-analytics backend or send learning records to one. The Amazon SDK has its own store telemetry, described below. Android backup and device-transfer backup are disabled for app data.
 
 ## Optional speech
 
@@ -19,6 +19,10 @@ Narration uses an installed TextToSpeech voice that Android identifies as not re
 ## Amazon purchases and restoration
 
 The Amazon edition offers an optional one-time Full Adventure purchase through Amazon's Appstore SDK. The SDK supplies an Amazon user identifier, marketplace/product information and purchase receipts. The app caches account-scoped entitlement information in private app storage to restore ownership and allow offline access. This is separate from the child's learning progress. Amazon processes purchase, receipt and restoration requests through its services. TimesQuest does not handle payment-card details or Amazon passwords.
+
+The bundled Amazon Appstore SDK 3.0.9 also records store-operation events and technical diagnostics. Its telemetry can include SDK session/request identifiers, timestamps, receipts/receipt identifiers, fulfillment status, device identifiers contained in receipt data, and receipt-verification, parsing or other SDK error details. It sends these to Amazon's Appstore service for store functionality, operational analytics, troubleshooting and receipt/fraud protection. This telemetry is separate from the child's multiplication answers and is not a TimesQuest advertising or learning-analytics service. Amazon user/marketplace information may include the account's marketplace or country of residence; it is not device location tracking.
+
+The SDK checks the installed Amazon store service/provider and its package signature so it can communicate with a trusted store. The app also discovers installed speech services for optional narration/recognition. These are local service-availability/security checks, not a general inventory of installed apps sent by TimesQuest. No advertising identifier API, location permission, contacts, calendar, photo-library, messages or general file access is integrated.
 
 Amazon operates the store and its own account/purchase records under its policies. See [Amazon's privacy notice](https://www.amazon.com/gp/help/customer/display.html?nodeId=468496) and the privacy controls for your Amazon account. TimesQuest's on-device deletion controls do not delete Amazon's purchase history or change refund rights.
 

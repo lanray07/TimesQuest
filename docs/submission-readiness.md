@@ -41,7 +41,7 @@ The precise owner inputs are listed in [needed-from-owner.md](needed-from-owner.
 3. Owner backup of the dedicated TimesQuest signing key/password. Key creation, signed build, signature/alignment verification and draft upload are complete; see release-signing.md and signed-release.json. Only the standalone release remains unsigned.
 4. A real Fire/Android target for gameplay, lifecycle, offline, accessibility, speech and performance validation, plus authentic phone/tablet captures.
 5. Human educational/narration review and reviewed translations/evidence for additional launch languages.
-6. Publisher-specific privacy/SDK/legal review, final privacy/support notices, rating/privacy labels and current store checks.
+6. Final publisher/legal review and actual store checks. The SDK's code/telemetry paths have now been reviewed, all 39 privacy data types and applicable purposes answered, and the questionnaire saved for review. The in-app/public notices now describe SDK operational telemetry. This technical completion does not replace legal or physical-device/service validation; see sdk-privacy-disclosures.md.
 7. Explicit approval of the concrete signed app submission and public website deployment after verification.
 
 UK English is the base, not a completed human/device approval. US English remains an unreviewed debug preview. The other ten packs are incomplete; runtime preparation does not equal translation or validation. Unsupported Fire speech services retain touch/text fallback and must not advertise voice answering.

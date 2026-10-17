@@ -7,6 +7,12 @@ checks=[]
 def check(name,passed,needed):checks.append({'check':name,'passed':bool(passed),'needed':None if passed else needed})
 key=ROOT/'app/src/amazon/assets/AppstoreAuthenticationKey.pem'
 check('Amazon public authentication key',key.is_file() and key.stat().st_size>0,'Provide the app-specific public AppstoreAuthenticationKey.pem from your developer console.')
+privacy_file=ROOT/'docs/amazon-privacy-answers.json'
+privacy=json.loads(privacy_file.read_text(encoding='utf-8')) if privacy_file.is_file() else {}
+privacy_text=json.loads((ROOT/'app/src/main/assets/i18n/en-GB.json').read_text(encoding='utf-8'))['privacy_detail']
+answers=privacy.get('answers',[]);purposes=privacy.get('purposes',[])
+privacy_complete=privacy.get('status')=='Saved for review' and len(answers)==78 and all(a.get('answered') for a in answers) and {a['id'] for a in answers if a.get('yes')}=={p['id'] for p in purposes} and all(p.get('purposes') for p in purposes) and privacy.get('privacyTextSha256')==hashlib.sha256(privacy_text.encode()).hexdigest() and ('amazon-appstore-sdk:'+privacy.get('amazonSdkVersion','missing')) in (ROOT/'app/build.gradle').read_text(encoding='utf-8')
+check('SDK privacy questionnaire evidence',privacy_complete,'Review the actual SDK data flows, answer every collection/transfer and purpose field, save the Amazon draft, and update the evidence for the current SDK and in-app notice.')
 variables=['TIMESQUEST_KEYSTORE','TIMESQUEST_STORE_PASSWORD','TIMESQUEST_KEY_ALIAS','TIMESQUEST_KEY_PASSWORD']
 signed_file=ROOT/'docs/signed-release.json'
 signed=json.loads(signed_file.read_text(encoding='utf-8')) if signed_file.is_file() else {}
