@@ -103,7 +103,6 @@ public class MainActivity extends Activity {
       showMap();
       if (hadMission) Toast.makeText(this, text("save_recovered"), Toast.LENGTH_LONG).show();
     }
-    billing.refresh();
   }
 
   void loadLanguage() {
@@ -1275,6 +1274,8 @@ public class MainActivity extends Activity {
   @Override
   protected void onResume() {
     super.onResume();
+    // Approvals, refunds and account changes can happen while the app is backgrounded.
+    billing.refresh();
     if (parentLocked) {
       showParentLock();
       return;

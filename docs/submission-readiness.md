@@ -1,6 +1,6 @@
 # Submission readiness — 17 October 2026
 
-**Status: polished development build; release blocked by external inputs and validation.** Source and a technical privacy notice are published in the owner's GitHub repository. An Amazon app/listing and GBP 4.99 entitlement draft have been filled, but no app or IAP has been submitted or made live, no marketing website has been deployed and no purchase has been made. Host tests cannot establish the full production-quality/device-compliance bar by themselves.
+**Status: polished development build; release blocked by external inputs and validation.** Source and a technical privacy notice are published in the owner's GitHub repository. An Amazon app/listing and GBP 4.99 entitlement draft have been filled, but no app or IAP has been submitted or made live, no marketing website has been deployed and no paid purchase has been made. Host tests cannot establish the full production-quality/device-compliance bar by themselves.
 
 ## Completed in the polishing pass
 
@@ -20,15 +20,15 @@
 | Suite | Executions | Result |
 |---|---:|---|
 | Core Java learning/voice/entitlement tests | 16 | Passed |
-| Standalone debug Android host tests/native renders | 22 | Passed |
-| Standalone release Android host tests | 19 | Passed |
-| Amazon adapter host tests | 9 | Passed |
+| Standalone debug Android host tests/native renders | 23 | Passed |
+| Standalone release Android host tests | 20 | Passed |
+| Amazon adapter host tests | 11 | Passed |
 | Python localisation/transport/review tests | 11 | Passed |
 | Website HTML/array/configuration/server tests | 9 | Passed |
 | Standalone and Amazon lint | — | No issues |
 | Debug/release/instrumentation assembly | — | Passed |
 
-The 66 JVM executions include repeated scenarios under debug and release configurations. There are **86 successful local test executions in total**, not 86 physical-device scenarios. Evidence is in `build-artifacts.json`, `artifacts/verification.json`, Gradle XML reports and logs. GitHub CI is triggered by the authorised source push; consult Actions for its actual result.
+The 70 JVM executions include repeated scenarios under debug and release configurations. There are **90 successful local test executions in total**, not 90 physical-device scenarios. Evidence is in `build-artifacts.json`, `artifacts/verification.json`, Gradle XML reports and logs. GitHub CI is triggered by the authorised source push; consult Actions for its actual result.
 
 Robolectric uses framework shadows/native host graphics, not a Fire OS image. SDK host tests instrument Amazon classes so its bytecode can run on the JVM; the production SDK is unmodified. Upstream Amazon D8 stack-map warnings remain in assembly output. No deployed SDK/platform certification is inferred.
 
@@ -37,9 +37,9 @@ Robolectric uses framework shadows/native host graphics, not a Fire OS image. SD
 The precise owner inputs are listed in [needed-from-owner.md](needed-from-owner.md):
 
 1. Cleared/replacement name, actual publisher/contact/domain/launch-country details, and launch languages.
-2. Actual App Tester/Live App Testing results. The public Amazon PEM is installed; the signed APK has been accepted into the Amazon draft, the SKU/price draft is complete, and all Amazon-supported countries are owner-approved. See amazon-console-draft.md.
+2. Signed-candidate Live App Testing results; physical debug App Tester cases now passed, with a pending-decline retry limitation. The public Amazon PEM is installed; the signed APK has been accepted into the Amazon draft, the SKU/price draft is complete, and all Amazon-supported countries are owner-approved. See amazon-console-draft.md.
 3. Owner backup of the dedicated TimesQuest signing key/password. Key creation, signed build, signature/alignment verification and draft upload are complete; see release-signing.md and signed-release.json. Only the standalone release remains unsigned.
-4. Remaining device validation: a physical KFTRWI Fire now passed three free signed-release missions, hint/correction, force-stop recovery and an offline launch/question check. The isolated physical-device instrumentation also passed all six modes, first-answer tracking, rewards, save/reload and deletion. Four authentic tablet captures are uploaded and Amazon shows Ready to Submit. Accessibility, speech, performance, other models and store validation remain; see fire-device-qa-2026-10-17.md.
+4. Remaining device validation: a physical KFTRWI Fire now passed three free signed-release missions, hint/correction, force-stop recovery and an offline launch/question check. The isolated physical-device instrumentation also passed all six modes, first-answer tracking, rewards, save/reload and deletion. Four authentic tablet captures are uploaded and Amazon shows Ready to Submit. Offline speech and focused VoiceView/large-text checks now passed. Broader accessibility, sustained performance, other models and signed LAT validation remain; see fire-device-qa-2026-10-17.md.
 5. Human educational/narration review and reviewed translations/evidence for additional launch languages.
 6. Final publisher/legal review and actual store checks. The SDK's code/telemetry paths have now been reviewed, all 39 privacy data types and applicable purposes answered, and the questionnaire saved for review. The in-app/public notices now describe SDK operational telemetry. This technical completion does not replace legal or physical-device/service validation; see sdk-privacy-disclosures.md.
 7. Explicit approval of the concrete signed app submission and public website deployment after verification.
@@ -50,6 +50,8 @@ The 16 screenshot SVGs remain editable blueprints. Four authentic unedited physi
 
 ## Artifacts
 
-Five Android outputs have paths, sizes and SHA-256 in `build-artifacts.json`: standalone/Amazon debug APKs, the dedicated-key signed Amazon release, an unsigned standalone release and standalone instrumentation. The private review ZIP adds documentation, privacy notice, icons, draft metadata and marked screenshot sources; it is not a submission package. The signed Amazon APK has been uploaded to the existing draft after certificate and alignment verification. US preview resources are excluded from release APKs. The previous pushed source also passed the GitHub verification workflow; the separate signed candidate passed local core/release/Amazon tests and Amazon release lint.
+Six Android outputs have paths, sizes and SHA-256 in `build-artifacts.json`: standalone/Amazon debug APKs, the dedicated-key signed Amazon release, an unsigned standalone release and standalone instrumentation. The private review ZIP adds documentation, privacy notice, icons, draft metadata and marked screenshot sources; it is not a submission package. The signed Amazon APK has been uploaded to the existing draft after certificate and alignment verification. US preview resources are excluded from release APKs. The previous pushed source also passed the GitHub verification workflow; the separate signed candidate passed local core/release/Amazon tests and Amazon release lint.
 
 The [existing name-use finding](https://www.sparkanvil.org/apps/timesquest/), [Amazon image/metadata requirements](https://developer.amazon.com/docs/app-submission/appstore-details.html), [public-key setup](https://developer.amazon.com/docs/appstore-sdk/integrate-appstore-sdk.html) and [Fire/general-Android distribution distinction](https://developer.amazon.com/apps-and-games/blogs/2025/02/upcoming-changes-to-amazon-appstore-for-android-devices-and-coins-program) remain documented. Recheck immediately before submission; no legal clearance or certification is inferred.
+
+Current candidate: signed 0.1.2 / code 3 accepted by Amazon draft, with foreground billing refresh fixed. Extended physical results, single startup/memory samples, sandbox coverage and the remaining declined-pending retry limitation: [fire-extended-qa-2026-10-17.md](fire-extended-qa-2026-10-17.md). The Python/website results above are unchanged prior executions; this pass reran the affected JVM suites and Amazon release lint/build.

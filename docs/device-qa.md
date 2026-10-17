@@ -1,3 +1,5 @@
+Follow-up: [extended Fire QA](fire-extended-qa-2026-10-17.md) records offline speech and VoiceView listening confirmation, 200% text/rotation, device diagnostics and actual debug App Tester coverage. Signed 0.1.2 is installed and uploaded; LAT and the declined-pending retry limitation remain. Historical pending rows below are superseded only by those specific results.
+
 # Device and feature validation
 
 Update: physical KFTRWI Fire testing and four authentic draft screenshots are now recorded in [fire-device-qa-2026-10-17.md](fire-device-qa-2026-10-17.md). Three free signed-release missions, hint/correction, force-stop recovery and an offline launch/question check passed. The original host-only baseline below remains historical; unexecuted procedures still require validation.

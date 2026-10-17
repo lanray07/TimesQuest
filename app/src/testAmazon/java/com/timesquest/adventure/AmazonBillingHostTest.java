@@ -22,6 +22,41 @@ import org.robolectric.annotation.*;
 @LooperMode(LooperMode.Mode.PAUSED)
 public class AmazonBillingHostTest {
   @Test
+  public void foregroundRefreshDoesNotInterruptCheckout() {
+    user("a");
+    updates("a", false);
+    product();
+    billing.purchase();
+    int calls = gateway.calls;
+    RequestId request = billing.purchaseRequest;
+    billing.refresh();
+    assertEquals(calls, gateway.calls);
+    assertSame(request, billing.purchaseRequest);
+    assertTrue(billing.confirmedUser);
+    assertTrue(billing.purchaseInFlight);
+  }
+
+  @Test
+  public void foregroundRefreshRestoresApprovalOfPendingPurchase() {
+    user("a");
+    updates("a", false);
+    product();
+    billing.purchase();
+    billing.onPurchaseResponse(
+        new PurchaseResponseBuilder()
+            .setRequestId(gateway.purchase)
+            .setRequestStatus(PurchaseResponse.RequestStatus.PENDING)
+            .build());
+    updates("a", false);
+    assertFalse(billing.entitled());
+    user("a");
+    updates("a", false, receipt("approved", ProductType.ENTITLED, false));
+    assertTrue(billing.entitled());
+    assertFalse(billing.pendingPurchase);
+    assertEquals(Collections.singletonList("approved"), gateway.fulfilled);
+  }
+
+  @Test
   public void pendingPurchaseCannotUnlockOrStartAnotherCheckout() {
     user("a");
     updates("a", false);

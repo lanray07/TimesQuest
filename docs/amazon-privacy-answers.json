@@ -496,8 +496,8 @@
     }
   ],
   "status": "Saved for review",
-  "appVersionCode": 2,
-  "appVersionName": "0.1.1",
+  "appVersionCode": 3,
+  "appVersionName": "0.1.2",
   "amazonSdkVersion": "3.0.9",
   "amazonSdkSha256": "a179aaeec903d6a871dec732d94f16c67d12691fd0aa076995bd3943dc79ca09",
   "privacyTextSha256": "e698208788915f6f5ff4244d77f0d9fb683f003821b4c7d4fa535d45be995349"

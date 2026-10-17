@@ -45,7 +45,7 @@
   "releasePackages": [
     {
       "file": "app/build/outputs/apk/amazon/release/app-amazon-release.apk",
-      "sha256": "ada6347026f124ec27fd4aab306cf5524749f65674bdec2b0336ea376ce2bebc",
+      "sha256": "8165df2eae57aab02adf88d1f502e20623328e29ec2d4abead4e33c9907e3653",
       "hasUsDraft": false
     },
     {

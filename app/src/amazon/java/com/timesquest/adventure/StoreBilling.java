@@ -125,7 +125,7 @@ final class StoreBilling implements Billing, PurchasingListener {
   }
 
   public void refresh() {
-    if (!configured) return;
+    if (!configured || purchaseInFlight) return;
     confirmedUser = false;
     productAvailable = false;
     localPrice = "";

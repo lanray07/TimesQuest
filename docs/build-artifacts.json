@@ -3,15 +3,21 @@
   "artifacts": [
     {
       "path": "app/build/outputs/apk/amazon/debug/app-amazon-debug.apk",
-      "bytes": 3319082,
-      "sha256": "f066bda27cc9d68dde7e1ff42cd1a6ef89708cb39192a2dacb3a38b3644f94e4",
+      "bytes": 3319098,
+      "sha256": "297a8dc1c5bd9bd91515fd98678de645aad39ea95ce32e6d6141cfe8b156fbe6",
       "signing": "Android debug certificate"
     },
     {
       "path": "app/build/outputs/apk/amazon/release/app-amazon-release.apk",
-      "bytes": 3269603,
-      "sha256": "ada6347026f124ec27fd4aab306cf5524749f65674bdec2b0336ea376ce2bebc",
+      "bytes": 3269583,
+      "sha256": "8165df2eae57aab02adf88d1f502e20623328e29ec2d4abead4e33c9907e3653",
       "signing": "Dedicated TimesQuest release certificate: b0582cdf6eeb641b6a6fd96c3ba697c0f07bba60980ef72466d1eb53e7d15966"
+    },
+    {
+      "path": "app/build/outputs/apk/androidTest/amazon/debug/app-amazon-debug-androidTest.apk",
+      "bytes": 20489,
+      "sha256": "bbcc7ff3d007153e6e5107b3502f046e02f0ccfa500f670ba1b48433fb3a4151",
+      "signing": "Android debug certificate"
     },
     {
       "path": "app/build/outputs/apk/androidTest/standalone/debug/app-standalone-debug-androidTest.apk",
@@ -68,7 +74,7 @@
     {
       "configuration": "testAmazonDebugUnitTest",
       "name": "com.timesquest.adventure.AmazonBillingHostTest",
-      "tests": "9",
+      "tests": "11",
       "failures": "0",
       "errors": "0",
       "skipped": "0"
@@ -76,7 +82,7 @@
     {
       "configuration": "testStandaloneDebugUnitTest",
       "name": "com.timesquest.adventure.AdventureHostTest",
-      "tests": "11",
+      "tests": "12",
       "failures": "0",
       "errors": "0",
       "skipped": "0"
@@ -116,7 +122,7 @@
     {
       "configuration": "testStandaloneReleaseUnitTest",
       "name": "com.timesquest.adventure.AdventureHostTest",
-      "tests": "11",
+      "tests": "12",
       "failures": "0",
       "errors": "0",
       "skipped": "0"
@@ -146,10 +152,10 @@
       "skipped": "0"
     }
   ],
-  "jvmExecutions": 66,
-  "deviceTests": "NOT RUN \u2014 host tests and Skia renders do not certify physical devices",
-  "purchaseTests": "Actual SDK response-model adapter tests with recording transport passed; no real store transaction executed",
-  "voiceTests": "English/localised vocabulary parser and permission/lifecycle boundaries tested on host; actual speech services NOT RUN",
+  "jvmExecutions": 70,
+  "deviceTests": "Physical KFTRWI release UI and isolated instrumentation checks passed within documented scope; docs/fire-extended-qa-2026-10-17.md",
+  "purchaseTests": "Physical App Tester debug mock success/cancel/restore/refund/account/pending approval passed; declined-pending retry requires relaunch; signed LAT outstanding; no real payment",
+  "voiceTests": "Offline Ivona/Amy narration and VoiceView labels owner-confirmed; physical synthesis/background stop passed; API 28 cannot run on-device microphone recognition",
   "website": "20 static pages and nine automated website tests passed",
   "localisation": "English structural/host checks only; no locale has completed human/device release approval"
 }

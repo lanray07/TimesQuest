@@ -5,10 +5,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import com.timesquest.core.LearningEngine;
 
-/** Runs against the isolated .dev app. Does not trigger purchases, voice, or external links. */
-public class QuestInstrumentation extends Instrumentation {
+/** Runs against the isolated .dev app. Default smoke run never initiates purchases, microphone capture or external links. */
+public class QuestInstrumentation extends DeviceChecksInstrumentation {
+  boolean deviceChecks;
+
   @Override
   public void onCreate(Bundle args) {
+    deviceChecks = args != null && Boolean.parseBoolean(args.getString("deviceChecks", "false"));
     super.onCreate(args);
     start();
   }
@@ -19,6 +22,10 @@ public class QuestInstrumentation extends Instrumentation {
 
   @Override
   public void onStart() {
+    if (deviceChecks) {
+      super.onStart();
+      return;
+    }
     Bundle result = new Bundle();
     Bundle status = new Bundle();
     status.putString("id", "TimesQuest");

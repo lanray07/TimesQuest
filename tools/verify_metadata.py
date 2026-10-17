@@ -12,6 +12,8 @@ for size in [114,512]:
     assert png[:8]==b'\x89PNG\r\n\x1a\n'
     assert struct.unpack('>II',png[16:24])==(size,size)
 manifest=json.loads((ROOT/'marketing/screenshots/manifest.json').read_text())
-assert len(manifest['shots'])==8
+assert len(manifest['shots'])==10, 'Expected ten documented capture scenarios'
+assert len({shot['id'] for shot in manifest['shots']})==len(manifest['shots']), 'Duplicate capture scenario'
+assert all((ROOT/'marketing/screenshots/captures/en-GB'/f'{shot}.png').is_file() for shot in manifest.get('draftUploadedShots',[])), 'Uploaded capture missing'
 assert len(list((ROOT/'marketing/screenshots/sources').glob('*.svg')))==16
-print('PASS: listing field sizes, five feature bullets, native-size PNG icons and 16 clearly marked screenshot source blueprints. Authentic screenshot exports remain blocked.')
+print('PASS: listing field sizes, five feature bullets, native-size PNG icons and 16 clearly marked screenshot source blueprints. Four authentic draft captures are recorded separately; human locale approval remains pending.')

@@ -46,6 +46,29 @@ public class AdventureHostTest {
   }
 
   @Test
+  public void foregroundRefreshesBillingEvenWhenParentAreaLocks() {
+    Billing original = app.billing;
+    java.util.concurrent.atomic.AtomicInteger refreshes =
+        new java.util.concurrent.atomic.AtomicInteger();
+    app.billing =
+        (Billing)
+            java.lang.reflect.Proxy.newProxyInstance(
+                Billing.class.getClassLoader(),
+                new Class<?>[] {Billing.class},
+                (proxy, method, args) -> {
+                  if (method.getName().equals("refresh")) refreshes.incrementAndGet();
+                  return method.invoke(original, args);
+                });
+    app.parentUntil = android.os.SystemClock.elapsedRealtime() + 120000;
+    app.showParent();
+    controller.pause().resume();
+    assertEquals(1, refreshes.get());
+    assertEquals("parent-lock", app.route);
+    controller.pause().resume();
+    assertEquals(2, refreshes.get());
+  }
+
+  @Test
   public void allSixMissionsCompleteAndKeepFirstAnswerAccounting() {
     for (int mode = 0; mode < (BuildConfig.DEBUG ? 6 : 3); mode++) {
       start(mode);
