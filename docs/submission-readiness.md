@@ -1,5 +1,7 @@
 # Submission readiness — 17 October 2026
 
+**Current status — 17 October 2026:** signed 0.1.4/code 5 was successfully submitted to Amazon after the owner instructed submission and confirmed the English educational/narration review and retained name. Amazon now displays UNDER REVIEW; its estimated Appstore date is 22 October at 12:30 UK time. This current status supersedes the earlier draft/blocker history below. Actual release awaits Amazon review. Additional locales, website launch, real Kids pending and second-account coverage remain separate unfinished work.
+
 **Status: polished development build; release blocked by external inputs and validation.** Source and a technical privacy notice are published in the owner's GitHub repository. An Amazon app/listing and GBP 4.99 entitlement draft have been filled, but no app or IAP has been submitted or made live, no marketing website has been deployed and no paid purchase has been made. Host tests cannot establish the full production-quality/device-compliance bar by themselves.
 
 ## Completed in the polishing pass

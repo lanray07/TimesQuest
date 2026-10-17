@@ -1,5 +1,7 @@
 # Exactly what is still needed from the owner
 
+**Current status — 17 October 2026:** signed 0.1.4/code 5 was successfully submitted to Amazon after the owner instructed submission and confirmed the English educational/narration review and retained name. Amazon now displays UNDER REVIEW; its estimated Appstore date is 22 October at 12:30 UK time. This current status supersedes the earlier draft/blocker history below. Actual release awaits Amazon review. Additional locales, website launch, real Kids pending and second-account coverage remain separate unfinished work.
+
 The remaining account, factual, legal and physical-device inputs cannot be invented or certified by host tests. No Amazon password is needed in this chat. Keep signing passwords and private keys in your local environment.
 
 ## Decisions and factual details

@@ -1,6 +1,6 @@
 # LAT purchase checks - 17 October 2026
 
-**Amazon-installed LAT entitlement, explicit restore and offline premium access have now been observed successfully. Public app remains unsubmitted. Owner confirmation of checkout authentication and cost is pending.**
+**Amazon-installed LAT entitlement, explicit restore and offline premium access have now been observed successfully. Public 0.1.4/code 5 was subsequently submitted with owner authorization. Owner confirmation of checkout authentication and cost is pending.**
 
 Amazon console now shows the tester invitation as Delivered. On the Fire, the Amazon.co.uk thank-you page confirms TEST 1 invitation redemption. The selected automatic delivery target was a different registered Fire (9th Fire); the USB-connected target is the 8th Fire, KFTRWI / Fire HD 10 (11th generation), Android 9/API 28.
 
@@ -24,4 +24,4 @@ Private proof includes amazon-installed-ready.png, checkout-price-hold.png, lat-
 
 Private evidence: artifacts/lat-purchase/install-verification.json, test1-free-download.png, sideload-store-unavailable.png and progress-preserved.png. Only the fixed signature error was retained as diagnostic evidence; no signed download links, account identifiers, addresses or log payloads belong in public documentation.
 
-Remaining: confirm the owner's checkout interaction/cost, isolate cancellation and retry with a disposable LAT entitlement reset, verify reset/revocation and fresh restore, and complete Kids pending approval/decline and second-account checks. Do not submit or promote the public app/IAP. The question-variety source changes are separate from TEST 1's 0.1.3 build.
+Remaining: confirm the owner's checkout interaction/cost, isolate cancellation and retry with a disposable LAT entitlement reset, verify reset/revocation and fresh restore, and complete Kids pending approval/decline and second-account checks. The earlier instruction to hold public submission was superseded by the owner; public 0.1.4/code 5 is now submitted. The question-variety source changes are separate from TEST 1's 0.1.3 build.

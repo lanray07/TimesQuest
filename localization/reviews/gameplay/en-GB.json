@@ -1,0 +1,13 @@
+{
+  "reviewer": "Olanrewaju Bankole (publisher/owner)",
+  "date": "2026-10-17",
+  "nativeLabel": "English (UK)",
+  "sourceSha256": "797038b30e0d5252c1df15ef39b4f553f901713998e27d3d3226f5103715c2bd",
+  "packSha256": "797038b30e0d5252c1df15ef39b4f553f901713998e27d3d3226f5103715c2bd",
+  "education": "docs/question-variety-2026-10-17.md",
+  "narration": "docs/question-variety-2026-10-17.md",
+  "gameplay": "docs/fire-device-qa-2026-10-17.md",
+  "voice": "docs/fire-extended-qa-2026-10-17.md",
+  "screenshots": "docs/fire-device-qa-2026-10-17.md",
+  "scope": "Owner explicitly confirmed review/approval of English educational explanations and narration. Referenced gameplay/voice/screenshots files document actual device validation and its limits; no API 31+ microphone validation or additional-language approval is implied."
+}

@@ -1,5 +1,7 @@
 {
   "status": "BLOCKED",
+  "amazonAppStatus": "UNDER REVIEW",
+  "scope": "Full project deliverables, including website configuration and eight planned captures; this is not the Amazon console submission validator.",
   "checks": [
     {
       "check": "Amazon public authentication key",
@@ -23,8 +25,8 @@
     },
     {
       "check": "English human review record",
-      "passed": false,
-      "needed": "Provide named reviewers and actual evidence, matching the current source and translation hashes. Details: A named human reviewer is required; education: an existing review evidence file within the repo is required; narration: an existing review evidence file within the repo is required; gameplay: an existing review evidence file within the repo is required; voice: an existing review evidence file within the repo is required; screenshots: an existing review evidence file within the repo is required; Review does not match current source hash: 797038b30e0d5252c1df15ef39b4f553f901713998e27d3d3226f5103715c2bd; Review does not match current translation hash: 797038b30e0d5252c1df15ef39b4f553f901713998e27d3d3226f5103715c2bd"
+      "passed": true,
+      "needed": null
     },
     {
       "check": "Authentic gameplay captures",
@@ -45,7 +47,7 @@
   "releasePackages": [
     {
       "file": "app/build/outputs/apk/amazon/release/app-amazon-release.apk",
-      "sha256": "8fec0b64c49c34fdcbcdbd57221bba706ce28e5df255e50274985e0d671e6e82",
+      "sha256": "ee404666cefbb80bb2788022381bd8b8b37f519ca6b0d825289590a5ca7913b8",
       "hasUsDraft": false
     },
     {
@@ -54,5 +56,5 @@
       "hasUsDraft": false
     }
   ],
-  "note": "Presence checks do not prove legal approval, signing validity, a cleared name, real-device compatibility or Amazon transaction success. No publishing is performed."
+  "note": "Presence checks do not prove legal approval, signing validity, a cleared name, real-device compatibility or Amazon transaction success. This audit performs no publishing; recorded Amazon status comes from signed-release.json."
 }
