@@ -16,9 +16,9 @@
   "iapStatus": "Approved; TEST label",
   "testersAssigned": 0,
   "invitationsSent": 0,
-  "testAccountDetails": "Owner supplied tester identity; matching existing Amazon tester found. TimesQuest-specific group form prepared, awaiting explicit Amazon rights/communications/age-18 declaration confirmation. No private tester identity stored in repository.",
+  "testAccountDetails": "Owner supplied identity, explicitly confirmed rights/communications consent/age 18+, and dedicated TimesQuest group saved with the matching existing tester. Private identity omitted from repository.",
   "purchaseChecks": "Not yet run in signed Amazon LAT distribution",
-  "proof": "artifacts/lat-setup/tester-declaration-pending.png",
+  "proof": "artifacts/lat-setup/tester-group-saved.png",
   "sources": [
     "https://developer.amazon.com/docs/app-testing/live-app-testing-getting-started.html",
     "https://developer.amazon.com/docs/in-app-purchasing/iap-lat.html",
@@ -26,5 +26,7 @@
     "https://developer.amazon.com/docs/app-testing/prepare-app-testers.html"
   ],
   "testerGroupPrepared": "TimesQuest Fire Purchase Test",
-  "testerGroupSaved": false
+  "testerGroupSaved": true,
+  "testerGroupMembers": 1,
+  "assignmentBlocker": "LAT Test 1 remains Test submitted; Manage testers is disabled until Amazon finishes publishing the private test."
 }
