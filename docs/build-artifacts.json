@@ -8,10 +8,10 @@
       "signing": "Android debug certificate"
     },
     {
-      "path": "app/build/outputs/apk/amazon/release/app-amazon-release-unsigned.apk",
-      "bytes": 3265219,
-      "sha256": "74bca2fda7dc4c3df0657ac8e5e007dd1d0ae9f6f99f7cfb8551ccc59bb6ad4c",
-      "signing": "unsigned release candidate"
+      "path": "app/build/outputs/apk/amazon/release/app-amazon-release.apk",
+      "bytes": 3269387,
+      "sha256": "463e19f88a3d20f589c53d0ee1c7215bff874bab6a5713767879ccfdfb841f68",
+      "signing": "Dedicated TimesQuest release certificate: b0582cdf6eeb641b6a6fd96c3ba697c0f07bba60980ef72466d1eb53e7d15966"
     },
     {
       "path": "app/build/outputs/apk/androidTest/standalone/debug/app-standalone-debug-androidTest.apk",

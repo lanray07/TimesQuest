@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-17",
+  "path": "app/build/outputs/apk/amazon/release/app-amazon-release.apk",
+  "package": "com.timesquest.adventure",
+  "versionCode": 1,
+  "versionName": "0.1.0",
+  "bytes": 3269387,
+  "sha256": "463e19f88a3d20f589c53d0ee1c7215bff874bab6a5713767879ccfdfb841f68",
+  "signatureVerified": true,
+  "alignmentVerified": true,
+  "certificateSha256": "b0582cdf6eeb641b6a6fd96c3ba697c0f07bba60980ef72466d1eb53e7d15966",
+  "certificateSubject": "CN=TimesQuest Release",
+  "certificateExpiresUtc": "2054-03-04T07:20:51+00:00",
+  "keyAlgorithm": "RSA 3072 / SHA256withRSA",
+  "signingScheme": "APK v2",
+  "debuggable": false,
+  "publicAmazonKeyIncluded": true,
+  "debugLocaleExcluded": true,
+  "releaseTestsAndLint": "Passed; see artifacts/signed-release-build.log",
+  "uploadStatus": "Uploaded and accepted in the existing Amazon app draft; not submitted",
+  "deviceTests": "Not run",
+  "amazonAppId": "amzn1.devportal.mobileapp.a56d1e9d78304af2b803ff2217ce840b",
+  "amazonReleaseId": "amzn1.devportal.apprelease.ef6d675ac85e42b999072bd68b5b8014",
+  "amazonCompatibleDeviceSelection": {
+    "fireTabletProfiles": 12,
+    "fireTvProfiles": 0,
+    "automotiveProfiles": 0,
+    "status": "Amazon compatibility filtering only; physical-device validation outstanding"
+  }
+}

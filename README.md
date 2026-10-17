@@ -30,7 +30,7 @@ Install the standalone debug APK on a connected compatible test device:
 adb install -r app/build/outputs/apk/standalone/debug/app-standalone-debug.apk
 ```
 
-Debug builds use application ID `com.timesquest.adventure.dev`, visibly identify development access and expose all six modes for testing. Release builds use `com.timesquest.adventure`; premium modes require a real Amazon entitlement. The unsigned release output still needs publisher signing and the release checklist. The standalone flavour has no purchase provider and no INTERNET permission.
+Debug builds use application ID `com.timesquest.adventure.dev`, visibly identify development access and expose all six modes for testing. Release builds use `com.timesquest.adventure`; premium modes require a real Amazon entitlement. The Amazon release is now signed with a dedicated TimesQuest key and accepted in the existing Amazon draft, with 12 compatible Fire tablet profiles selected. It has not been submitted. See [signing handover](docs/release-signing.md) and [exact signed artifact](docs/signed-release.json). The standalone flavour has no purchase provider and no INTERNET permission; its release output remains unsigned.
 
 ## Checks
 

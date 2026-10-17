@@ -3,8 +3,13 @@ from pathlib import Path
 import hashlib,json,xml.etree.ElementTree as ET,os,re,subprocess
 ROOT=Path(__file__).resolve().parents[1]
 outputs=[]
+signed_file=ROOT/'docs/signed-release.json'
+signed=json.loads(signed_file.read_text(encoding='utf-8')) if signed_file.is_file() else {}
 for path in sorted((ROOT/'app/build/outputs/apk').rglob('*.apk')):
-    outputs.append({'path':path.relative_to(ROOT).as_posix(),'bytes':path.stat().st_size,'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'signing':'Android debug certificate' if '/debug/' in path.as_posix() else 'unsigned release candidate'})
+    digest=hashlib.sha256(path.read_bytes()).hexdigest()
+    signing='Android debug certificate' if '/debug/' in path.as_posix() else 'unsigned release candidate' if path.name.endswith('-unsigned.apk') else 'unverified release signature'
+    if digest==signed.get('sha256') and signed.get('signatureVerified') and signed.get('alignmentVerified'):signing='Dedicated TimesQuest release certificate: '+signed['certificateSha256']
+    outputs.append({'path':path.relative_to(ROOT).as_posix(),'bytes':path.stat().st_size,'sha256':digest,'signing':signing})
 tests=[]
 for folder in [ROOT/'core/build/test-results/test',*sorted((ROOT/'app/build/test-results').glob('test*UnitTest'))]:
     for path in sorted(folder.glob('TEST-*.xml')):

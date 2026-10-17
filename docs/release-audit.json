@@ -7,9 +7,9 @@
       "needed": null
     },
     {
-      "check": "Publisher signing environment",
-      "passed": false,
-      "needed": "Configure the four TIMESQUEST signing variables locally; never paste passwords or private keys in chat."
+      "check": "Publisher release signing",
+      "passed": true,
+      "needed": null
     },
     {
       "check": "Website publisher configuration",
@@ -39,8 +39,8 @@
   ],
   "releasePackages": [
     {
-      "file": "app/build/outputs/apk/amazon/release/app-amazon-release-unsigned.apk",
-      "sha256": "74bca2fda7dc4c3df0657ac8e5e007dd1d0ae9f6f99f7cfb8551ccc59bb6ad4c",
+      "file": "app/build/outputs/apk/amazon/release/app-amazon-release.apk",
+      "sha256": "463e19f88a3d20f589c53d0ee1c7215bff874bab6a5713767879ccfdfb841f68",
       "hasUsDraft": false
     },
     {

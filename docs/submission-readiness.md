@@ -37,8 +37,8 @@ Robolectric uses framework shadows/native host graphics, not a Fire OS image. SD
 The precise owner inputs are listed in [needed-from-owner.md](needed-from-owner.md):
 
 1. Cleared/replacement name, actual publisher/contact/domain/launch-country details, and launch languages.
-2. Signed app-file/package validation and actual App Tester/Live App Testing results. The public Amazon PEM is now installed; the SKU/price draft is complete and all Amazon-supported countries are owner-approved. See amazon-console-draft.md.
-3. Dedicated signing keystore configured privately through all four TIMESQUEST environment variables. Current releases are unsigned.
+2. Actual App Tester/Live App Testing results. The public Amazon PEM is installed; the signed APK has been accepted into the Amazon draft, the SKU/price draft is complete, and all Amazon-supported countries are owner-approved. See amazon-console-draft.md.
+3. Owner backup of the dedicated TimesQuest signing key/password. Key creation, signed build, signature/alignment verification and draft upload are complete; see release-signing.md and signed-release.json. Only the standalone release remains unsigned.
 4. A real Fire/Android target for gameplay, lifecycle, offline, accessibility, speech and performance validation, plus authentic phone/tablet captures.
 5. Human educational/narration review and reviewed translations/evidence for additional launch languages.
 6. Publisher-specific privacy/SDK/legal review, final privacy/support notices, rating/privacy labels and current store checks.
@@ -50,6 +50,6 @@ The 16 screenshot SVGs remain editable blueprints. No authentic gameplay screens
 
 ## Artifacts
 
-Five Android outputs have paths, sizes and SHA-256 in `build-artifacts.json`: standalone/Amazon debug APKs, standalone/Amazon unsigned releases and standalone instrumentation. The private review ZIP adds documentation, icons, draft metadata and marked screenshot sources; it is not upload-ready. Debug signing and unsigned Amazon APK alignment have been checked. US preview resources are excluded from release APKs.
+Five Android outputs have paths, sizes and SHA-256 in `build-artifacts.json`: standalone/Amazon debug APKs, the dedicated-key signed Amazon release, an unsigned standalone release and standalone instrumentation. The private review ZIP adds documentation, privacy notice, icons, draft metadata and marked screenshot sources; it is not a submission package. The signed Amazon APK has been uploaded to the existing draft after certificate and alignment verification. US preview resources are excluded from release APKs. The previous pushed source also passed the GitHub verification workflow; the separate signed candidate passed local core/release/Amazon tests and Amazon release lint.
 
 The [existing name-use finding](https://www.sparkanvil.org/apps/timesquest/), [Amazon image/metadata requirements](https://developer.amazon.com/docs/app-submission/appstore-details.html), [public-key setup](https://developer.amazon.com/docs/appstore-sdk/integrate-appstore-sdk.html) and [Fire/general-Android distribution distinction](https://developer.amazon.com/apps-and-games/blogs/2025/02/upcoming-changes-to-amazon-appstore-for-android-devices-and-coins-program) remain documented. Recheck immediately before submission; no legal clearance or certification is inferred.

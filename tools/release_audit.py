@@ -8,7 +8,11 @@ def check(name,passed,needed):checks.append({'check':name,'passed':bool(passed),
 key=ROOT/'app/src/amazon/assets/AppstoreAuthenticationKey.pem'
 check('Amazon public authentication key',key.is_file() and key.stat().st_size>0,'Provide the app-specific public AppstoreAuthenticationKey.pem from your developer console.')
 variables=['TIMESQUEST_KEYSTORE','TIMESQUEST_STORE_PASSWORD','TIMESQUEST_KEY_ALIAS','TIMESQUEST_KEY_PASSWORD']
-check('Publisher signing environment',all(os.environ.get(v) for v in variables),'Configure the four TIMESQUEST signing variables locally; never paste passwords or private keys in chat.')
+signed_file=ROOT/'docs/signed-release.json'
+signed=json.loads(signed_file.read_text(encoding='utf-8')) if signed_file.is_file() else {}
+signed_apk=ROOT/signed.get('path','missing-signed-apk')
+verified_signed=signed.get('signatureVerified') and signed.get('alignmentVerified') and signed_apk.is_file() and hashlib.sha256(signed_apk.read_bytes()).hexdigest()==signed.get('sha256')
+check('Publisher release signing',all(os.environ.get(v) for v in variables) or verified_signed,'Configure the signing environment or build and verify the dedicated signed release; never paste passwords or private keys in chat.')
 check('Website publisher configuration',(ROOT/'website/release.config.json').is_file(),'Supply the approved publisher name, support/privacy emails, HTTPS origin, name decision and reviewed privacy/education evidence in release.config.json.')
 review=ROOT/'localization/reviews/gameplay/en-GB.json'
 review_issues=localize.review_errors('en-GB','gameplay')[0]

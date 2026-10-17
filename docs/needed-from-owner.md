@@ -16,7 +16,7 @@ The remaining account, factual, legal and physical-device inputs cannot be inven
 
 ## Signing — configure locally
 
-7. Choose or create the dedicated publisher signing keystore and set:
+7. **Completed:** a dedicated publisher signing keystore was created at your request and the Amazon release was signed and verified. See `release-signing.md`. Back up this private key securely and record its password separately in your password manager; the Windows-encrypted password file is tied to this user/machine. The private rebuild helper supplies:
 
 ```text
 TIMESQUEST_KEYSTORE
@@ -25,7 +25,7 @@ TIMESQUEST_KEY_ALIAS
 TIMESQUEST_KEY_PASSWORD
 ```
 
-The first variable is the local keystore path; the others are its credentials/alias. Set these privately on your machine, never in repository files or chat. With no variables the build remains unsigned; partial configuration fails rather than silently choosing a different key. No unrelated project's key is used.
+The first variable is the local keystore path; the others are its credentials/alias. They are set temporarily by the private rebuild helper and cleared on exit, never printed or stored in the repository/chat. With no variables an ordinary build remains unsigned; partial configuration fails rather than silently choosing a different key. No unrelated project's key is used.
 
 ## A real test target and review evidence
 

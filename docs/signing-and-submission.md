@@ -1,12 +1,12 @@
 # Build, sign and submit
 
-Use Java 17, Gradle wrapper 8.13, Android Gradle Plugin 8.11.1 and SDK 36. `local.properties` is machine-specific and ignored. Build outputs are unsigned release candidates, not upload-ready releases. Keep keystores and passwords outside the repository. Never use another project's existing keystore by accident.
+Use Java 17, Gradle wrapper 8.13, Android Gradle Plugin 8.11.1 and SDK 36. `local.properties` is machine-specific and ignored. The owner has now authorised a dedicated signing key and Amazon draft APK upload. See [release-signing.md](release-signing.md) for the private local rebuild helper and backup instructions; [signed-release.json](signed-release.json) records the actual signed artifact. Keep keystores and passwords outside the repository. Never use another project's existing keystore by accident.
 
 ```powershell
 .\gradlew.bat :core:test :app:assembleAmazonRelease
 ```
 
-The current unsigned output is `app/build/outputs/apk/amazon/release/app-amazon-release-unsigned.apk`. Create or choose the publisher's dedicated release/upload key through Android Studio's Generate Signed Bundle / APK flow. Alternatively use Android SDK `zipalign` and `apksigner`, supplying passwords through interactive prompts or secure environment handling, never literal command history. Verify the final signature and aligned output before upload. The generated debug key is for local testing only. No publisher signing key has been created or selected.
+The signed Amazon output is `app/build/outputs/apk/amazon/release/app-amazon-release.apk`. The dedicated TimesQuest release key is outside the repository; its password is protected by Windows DPAPI and is not embedded in any script. Use the protected rebuild helper to produce future signed candidates. An ordinary build without signing variables still produces an unsigned output. Verify the final signature and aligned output before upload. The generated Android debug key is for local testing only.
 
 Gradle also supports a dedicated local signing configuration using all four environment variables: `TIMESQUEST_KEYSTORE` (absolute keystore path), `TIMESQUEST_STORE_PASSWORD`, `TIMESQUEST_KEY_ALIAS` and `TIMESQUEST_KEY_PASSWORD`. Set them privately outside source control. With all absent the release is unsigned; a partial configuration fails. Never paste secrets into chat. After a signed rebuild, rerun signature/alignment verification, device/store checks and regenerate the artifact hashes and private review bundle for that exact binary.
 
