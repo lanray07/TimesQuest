@@ -15,9 +15,9 @@
   "iapSubmission": "Submit to Test only",
   "iapStatus": "Approved; TEST label",
   "testersAssigned": 1,
-  "invitationsSent": 0,
+  "invitationsSent": 1,
   "testAccountDetails": "Owner supplied identity, explicitly confirmed rights/communications consent/age 18+, and dedicated TimesQuest group saved with the matching existing tester. Private identity omitted from repository.",
-  "purchaseChecks": "Not yet run in signed Amazon LAT distribution",
+  "purchaseChecks": "Blocked before purchase: connected Fire still has sideloaded candidate. Appstore TEST 1 replacement rejected due to signing-certificate mismatch. Data-preserving attempt rolled back with progress intact; awaiting full TimesQuest uninstall/data-reset approval.",
   "proof": "artifacts/lat-setup/invitation-status.png",
   "sources": [
     "https://developer.amazon.com/docs/app-testing/live-app-testing-getting-started.html",
@@ -29,6 +29,7 @@
   "testerGroupSaved": true,
   "testerGroupMembers": 1,
   "assignmentBlocker": null,
-  "invitationsQueued": 1,
-  "invitationStatus": "Pending"
+  "invitationsQueued": 0,
+  "invitationStatus": "Delivered",
+  "invitationRedeemed": true
 }
