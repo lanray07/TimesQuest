@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-17",
+  "appId": "amzn1.devportal.mobileapp.a56d1e9d78304af2b803ff2217ce840b",
+  "publicReleaseId": "amzn1.devportal.apprelease.ef6d675ac85e42b999072bd68b5b8014",
+  "publicAppStatus": "Ready to Submit; not submitted",
+  "testNumber": 1,
+  "testName": "TimesQuest 0.1.3 - Fire purchase checks",
+  "testChannel": "amzn1.channel.123ed68a836f4209bc6e2c7dd59127ab",
+  "testStatus": "Test submitted",
+  "versionName": "0.1.3",
+  "versionCode": 4,
+  "apkSha256": "8fec0b64c49c34fdcbcdbd57221bba706ce28e5df255e50274985e0d671e6e82",
+  "selectedFireProfiles": 12,
+  "iapSku": "timesquest.premium",
+  "iapSubmission": "Submit to Test only",
+  "iapStatus": "Approved; TEST label",
+  "testersAssigned": 0,
+  "invitationsSent": 0,
+  "testAccountDetails": "Awaiting owner; never infer tester account from support email",
+  "purchaseChecks": "Not yet run in signed Amazon LAT distribution",
+  "proof": "artifacts/lat-setup/lat-test-submitted.png",
+  "sources": [
+    "https://developer.amazon.com/docs/app-testing/live-app-testing-getting-started.html",
+    "https://developer.amazon.com/docs/in-app-purchasing/iap-lat.html",
+    "https://developer.amazon.com/docs/app-testing/manage-testers.html",
+    "https://developer.amazon.com/docs/app-testing/prepare-app-testers.html"
+  ]
+}

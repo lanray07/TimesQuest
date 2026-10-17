@@ -57,3 +57,5 @@ The [existing name-use finding](https://www.sparkanvil.org/apps/timesquest/), [A
 Previous 0.1.2 results, single startup/memory samples and sandbox coverage: [fire-extended-qa-2026-10-17.md](fire-extended-qa-2026-10-17.md). The Python/website results above are unchanged prior executions; this pass reran the affected JVM suites and Amazon release lint/build.
 
 Current candidate: signed **0.1.3 / code 4** accepted into the Amazon draft; declined/expired pending requests can retry after a successful ownership snapshot. Physical Fire decline -> same-process retry -> receipt/FULFILLED passed. Four screenshots and saved privacy disclosures retained; no submission. See [retry QA](fire-pending-retry-2026-10-17.md). This pass reran all 14 Amazon adapter tests, core and standalone release tests, and Amazon release lint/build. Other unchanged suite counts are prior passing executions.
+
+Private LAT Test 1 is now submitted for code 4; timesquest.premium is approved for TEST only. Public app remains unsubmitted. Tester identity/invitation redemption and actual signed purchase checks remain pending: [amazon-lat-setup.md](amazon-lat-setup.md).
