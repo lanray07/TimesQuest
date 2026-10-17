@@ -25,15 +25,24 @@ public final class LearningEngine {
     }
 
     public List<Integer> choices(Random random) {
-      Set<Integer> values = new LinkedHashSet<>();
-      values.add(answer());
-      for (int v : new int[] {answer() + a, answer() - a, a + b, answer() + b, answer() - b})
-        if (v > 0 && v <= 156) {
-          values.add(v);
-          if (values.size() == 4) break;
-        }
-      while (values.size() < 4) values.add(1 + random.nextInt(144));
-      List<Integer> result = new ArrayList<>(values);
+      Set<Integer> candidates = new LinkedHashSet<>();
+      for (int offset : new int[] {-2, -1, 1, 2}) {
+        candidates.add(answer() + offset * a);
+        candidates.add(answer() + offset * b);
+      }
+      for (int offset = -4; offset <= 4; offset++) candidates.add(answer() + offset);
+      candidates.add(a + b); // A common addition-versus-multiplication misconception.
+      if (answer() >= 10 && answer() < 100) {
+        int reversed = (answer() % 10) * 10 + answer() / 10;
+        if (Math.abs(reversed - answer()) <= Math.max(6, 2 * Math.max(a, b)))
+          candidates.add(reversed);
+      }
+      candidates.removeIf(value -> value < 1 || value > 144 || value == answer());
+      List<Integer> wrong = new ArrayList<>(candidates);
+      Collections.shuffle(wrong, random);
+      // Sample the values as well as their positions. Keep this set stable for retries/saves.
+      List<Integer> result = new ArrayList<>(wrong.subList(0, 3));
+      result.add(answer());
       Collections.shuffle(result, random);
       return result;
     }
@@ -105,7 +114,8 @@ public final class LearningEngine {
     if (table < 0 || table > 12 || maxTable < 1 || maxTable > 12)
       throw new IllegalArgumentException();
     List<Question> pool = new ArrayList<>();
-    double best = -Double.MAX_VALUE;
+    List<Double> weights = new ArrayList<>();
+    double totalWeight = 0;
     for (int a = 1; a <= 12; a++)
       for (int b = 1; b <= 12; b++) {
         if (table > 0 ? a != table : a > maxTable) continue;
@@ -118,13 +128,19 @@ public final class LearningEngine {
                 + (f.due <= now ? 8 : 0)
                 + errorWeight
                 - Math.min(f.streak, 6) * 2;
-        if (score > best) {
-          best = score;
-          pool.clear();
-        }
-        if (score == best) pool.add(q);
+        // Weight review needs instead of always picking only the highest-scoring facts.
+        // This preserves extra practice for weak facts without a predictable two-fact loop.
+        double weight = Math.pow(2, score / 4);
+        pool.add(q);
+        weights.add(weight);
+        totalWeight += weight;
       }
-    return pool.get(random.nextInt(pool.size()));
+    double pick = random.nextDouble() * totalWeight;
+    for (int i = 0; i < pool.size(); i++) {
+      pick -= weights.get(i);
+      if (pick < 0) return pool.get(i);
+    }
+    return pool.get(pool.size() - 1);
   }
 
   /** Call exactly once per question, using the first answer; retries never create mastery. */

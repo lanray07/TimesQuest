@@ -10,8 +10,8 @@ Opened the actual TEST 1 product in the connected Fire Appstore using the observ
 
 Restored the original signed APK and enabled it for the owner profile. Verified the same corrected 7x8 question and Spark 4/5 remain. No learning data was erased. Backup is disabled by the app manifest; no claim of an exportable learning-data backup is made.
 
-A full TimesQuest uninstall/data reset is required to remove the old signing identity before the Amazon copy can install. Asked the owner for explicit permission to erase TimesQuest local learning progress/settings and continue. Approval is pending; do not perform the full uninstall until it arrives. An alternative is testing on a connected Fire with no conflicting sideload installation.
+The owner explicitly approved the full TimesQuest uninstall/data reset. Fully uninstalled only TimesQuest; ADB returned Success and the package is absent. The Fire subsequently locked itself at its PIN screen. Amazon installation and purchase checks are waiting for the owner to unlock it; the PIN has not been requested or bypassed.
 
 Private evidence: artifacts/lat-purchase/install-verification.json, test1-free-download.png, sideload-store-unavailable.png and progress-preserved.png. Only the fixed signature error was retained as diagnostic evidence; no signed download links, account identifiers, addresses or log payloads belong in public documentation.
 
-After approval: fully remove only TimesQuest, install the existing TEST 1 product through Amazon, verify Appstore installer and version, then perform zero-cost purchase/cancel/restore/offline checks and the remaining Kids/second-account matrix. Do not submit or promote the public app/IAP.
+Next: install the existing TEST 1 product through Amazon, verify Appstore installer and version, then perform zero-cost purchase/cancel/restore/offline checks and the remaining Kids/second-account matrix. Do not submit or promote the public app/IAP.

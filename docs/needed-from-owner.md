@@ -45,4 +45,4 @@ Declined-request fix and same-process Fire retry evidence: [fire-pending-retry-2
 
 Extended results and limits: [fire-extended-qa-2026-10-17.md](fire-extended-qa-2026-10-17.md). Temporary sandbox tooling was removed; signed 0.1.3 remains on the Fire.
 
-LAT installation follow-up: invitation is Delivered and redeemed. Connected Fire has a conflicting sideload signing certificate. A data-preserving Amazon reinstall failed, and the original app/progress were restored. Explicit approval to fully uninstall TimesQuest and erase its local progress/settings is now needed before installing the Amazon copy. See [amazon-lat-purchase-checks.md](amazon-lat-purchase-checks.md). No LAT purchase was initiated.
+LAT installation follow-up: invitation is Delivered and redeemed. The owner approved the full TimesQuest reset to remove the conflicting sideload signature, and the uninstall succeeded. The Fire is now at its PIN screen; unlock it locally so the Amazon TEST 1 installation can continue. No PIN or password is needed in chat. See [amazon-lat-purchase-checks.md](amazon-lat-purchase-checks.md). No LAT purchase was initiated.
