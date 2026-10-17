@@ -1,0 +1,2 @@
+# Optional marketing icon rasterisation only; Android and website need no Python packages.
+Pillow==12.2.0

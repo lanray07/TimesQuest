@@ -1,0 +1,11 @@
+{
+  "reviewer": "",
+  "nativeLabel": "",
+  "sourceSha256": "Use the current hash printed by release-check, after the text is final",
+  "packSha256": "Use the current translation hash printed by release-check",
+  "education": "",
+  "narration": "",
+  "gameplay": "",
+  "voice": "",
+  "screenshots": ""
+}

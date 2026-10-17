@@ -1,0 +1,53 @@
+{
+  "status": "BLOCKED",
+  "checks": [
+    {
+      "check": "Amazon public authentication key",
+      "passed": true,
+      "needed": null
+    },
+    {
+      "check": "Publisher signing environment",
+      "passed": false,
+      "needed": "Configure the four TIMESQUEST signing variables locally; never paste passwords or private keys in chat."
+    },
+    {
+      "check": "Website publisher configuration",
+      "passed": false,
+      "needed": "Supply the approved publisher name, support/privacy emails, HTTPS origin, name decision and reviewed privacy/education evidence in release.config.json."
+    },
+    {
+      "check": "English human review record",
+      "passed": false,
+      "needed": "Provide named reviewers and actual evidence, matching the current source and translation hashes. Details: A named human reviewer is required; education: an existing review evidence file within the repo is required; narration: an existing review evidence file within the repo is required; gameplay: an existing review evidence file within the repo is required; voice: an existing review evidence file within the repo is required; screenshots: an existing review evidence file within the repo is required; Review does not match current source hash: 7926775345b5e6d3194aa2c05a17aa582fdd9973225607ceda1728bde9830c04; Review does not match current translation hash: 7926775345b5e6d3194aa2c05a17aa582fdd9973225607ceda1728bde9830c04"
+    },
+    {
+      "check": "Authentic gameplay captures",
+      "passed": false,
+      "needed": "A running Fire/Android test target is needed for the eight documented real gameplay captures."
+    },
+    {
+      "check": "Latest local verification",
+      "passed": true,
+      "needed": null
+    },
+    {
+      "check": "No US draft in release APKs",
+      "passed": true,
+      "needed": null
+    }
+  ],
+  "releasePackages": [
+    {
+      "file": "app/build/outputs/apk/amazon/release/app-amazon-release-unsigned.apk",
+      "sha256": "74bca2fda7dc4c3df0657ac8e5e007dd1d0ae9f6f99f7cfb8551ccc59bb6ad4c",
+      "hasUsDraft": false
+    },
+    {
+      "file": "app/build/outputs/apk/standalone/release/app-standalone-release-unsigned.apk",
+      "sha256": "6ad1004e585a45a6fe009518d2d734b378f8a1de73d774e9137a9c62a9cda544",
+      "hasUsDraft": false
+    }
+  ],
+  "note": "Presence checks do not prove legal approval, signing validity, a cleared name, real-device compatibility or Amazon transaction success. No publishing is performed."
+}

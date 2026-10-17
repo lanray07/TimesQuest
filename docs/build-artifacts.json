@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-17",
+  "artifacts": [
+    {
+      "path": "app/build/outputs/apk/amazon/debug/app-amazon-debug.apk",
+      "bytes": 3333280,
+      "sha256": "6dfb8b17bfdc55c0bb308160d1d1ec8f8e87985320c27d849d38a9e92379462a",
+      "signing": "Android debug certificate"
+    },
+    {
+      "path": "app/build/outputs/apk/amazon/release/app-amazon-release-unsigned.apk",
+      "bytes": 3265219,
+      "sha256": "74bca2fda7dc4c3df0657ac8e5e007dd1d0ae9f6f99f7cfb8551ccc59bb6ad4c",
+      "signing": "unsigned release candidate"
+    },
+    {
+      "path": "app/build/outputs/apk/androidTest/standalone/debug/app-standalone-debug-androidTest.apk",
+      "bytes": 12179,
+      "sha256": "9b7315d71ecf6114de32176dd674c0a9ce0f3318d89b57134df91bd3b6b5f709",
+      "signing": "Android debug certificate"
+    },
+    {
+      "path": "app/build/outputs/apk/standalone/debug/app-standalone-debug.apk",
+      "bytes": 3146677,
+      "sha256": "8f881abf11342b8c80af53d2cffa438de29556c20a72ce980c4242ca62a5e8a1",
+      "signing": "Android debug certificate"
+    },
+    {
+      "path": "app/build/outputs/apk/standalone/release/app-standalone-release-unsigned.apk",
+      "bytes": 3110245,
+      "sha256": "6ad1004e585a45a6fe009518d2d734b378f8a1de73d774e9137a9c62a9cda544",
+      "signing": "unsigned release candidate"
+    }
+  ],
+  "executedJvmTestSuites": [
+    {
+      "configuration": "test",
+      "name": "com.timesquest.core.EntitlementRestoreTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "test",
+      "name": "com.timesquest.core.LearningEngineTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "test",
+      "name": "com.timesquest.core.PracticeProgressTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "test",
+      "name": "com.timesquest.core.VoiceLocaleTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "testAmazonDebugUnitTest",
+      "name": "com.timesquest.adventure.AmazonBillingHostTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "testStandaloneDebugUnitTest",
+      "name": "com.timesquest.adventure.AdventureHostTest",
+      "tests": "11",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "testStandaloneDebugUnitTest",
+      "name": "com.timesquest.adventure.HostLayoutTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "testStandaloneDebugUnitTest",
+      "name": "com.timesquest.adventure.LanguageHostTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "testStandaloneDebugUnitTest",
+      "name": "com.timesquest.adventure.ReleaseBoundaryHostTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "testStandaloneDebugUnitTest",
+      "name": "com.timesquest.adventure.SessionSnapshotHostTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "testStandaloneReleaseUnitTest",
+      "name": "com.timesquest.adventure.AdventureHostTest",
+      "tests": "11",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "testStandaloneReleaseUnitTest",
+      "name": "com.timesquest.adventure.LanguageHostTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "testStandaloneReleaseUnitTest",
+      "name": "com.timesquest.adventure.ReleaseBoundaryHostTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "configuration": "testStandaloneReleaseUnitTest",
+      "name": "com.timesquest.adventure.SessionSnapshotHostTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    }
+  ],
+  "jvmExecutions": 66,
+  "deviceTests": "NOT RUN \u2014 host tests and Skia renders do not certify physical devices",
+  "purchaseTests": "Actual SDK response-model adapter tests with recording transport passed; no real store transaction executed",
+  "voiceTests": "English/localised vocabulary parser and permission/lifecycle boundaries tested on host; actual speech services NOT RUN",
+  "website": "20 static pages and nine automated website tests passed",
+  "localisation": "English structural/host checks only; no locale has completed human/device release approval"
+}

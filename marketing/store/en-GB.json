@@ -1,0 +1,18 @@
+{
+  "status": "draft — device QA, legal review and listing approval required",
+  "displayTitle": "TimesQuest – Multiplication Games for Kids",
+  "shortDescription": "Master times tables through magical adventures. Explore multiplication from 1 to 12 with friendly creatures, visual explanations and offline practice. No adverts or child accounts.",
+  "longDescription": "A little maths. A lot of magic.\n\nJoin Pip, a friendly dragon, on a journey to restore four magical islands. Solve multiplication challenges, gather sparks and bring the island crystals back to life.\n\nSIX WAYS TO PLAY\nCast gentle number spells in Monster Math Battles. Open number locks in Treasure Hunt. Cross stepping stones in Times Table Jump. Power a little car in Multiplication Racing. Make equal scoops in Math Kitchen. Assemble a colourful companion in Build-a-Robot.\n\nSEE WHY AN ANSWER WORKS\nExplore tables from 1 to 12 with visual arrays, repeated addition, skip counting and fact-family explanations. When a question is tricky, a hint helps children see the groups. Untimed play gives them room to think.\n\nA CONNECTED ADVENTURE\nComplete five-challenge missions to restore crystals and earn mission badges. Later islands expand the table mix. Free practice lets children revisit any table from 1 to 12.\n\nTHOUGHTFUL PARENT CONTROLS\nThe protected parent area shows first-answer accuracy and practice progress by table. Learning records stay on the device and can be deleted. There are no mandatory child accounts, advertisements, subscriptions or social features.\n\nFREE STARTER, OPTIONAL FULL ADVENTURE\nExplore the starter meadow, the first three mission types and all multiplication tables for free. A one-time purchase in the parent area unlocks the remaining islands and mission types. The actual local price appears through Amazon.\n\nDEVICE-DEPENDENT NARRATION\nWritten instructions and touch controls are always available. Spoken guidance requires a compatible installed offline TextToSpeech voice. Voice answering must only be advertised after validation on the relevant device and market.\n\nOffline game content is bundled with the app. Purchasing and restoration require Amazon connectivity. Designed for children around 6–11; practice indicators are not a formal educational assessment.",
+  "productFeatureBullets": [
+    "Explore multiplication tables from 1 to 12 with visual hints and adaptive practice.",
+    "Restore island crystals through six connected mission types in the full adventure.",
+    "Play untimed with written guidance, touch controls and reduced-movement settings.",
+    "Keep learning records on the device and review table progress in the parent area.",
+    "Start free, with an optional one-time full-adventure purchase and no advertisements."
+  ],
+  "keywords": ["multiplication games for kids","times tables games","learn multiplication","maths games for kids","multiplication practice","offline maths games","times tables 1 to 12","multiplication adventure"],
+  "releaseNotes": "Initial release candidate: four islands, six mission types, multiplication facts from 1 to 12, visual explanations, local progress and parent settings. Subject to final device validation.",
+  "internalTestPrice": "GBP 4.99 — configure the Amazon non-consumable; never hardcode as the customer's price",
+  "supportedLanguagesForSubmission": [],
+  "nameAvailability": "Not reserved or legally cleared; console and trademark checks required"
+}

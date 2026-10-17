@@ -1,0 +1,10 @@
+{
+  "sourceLocale": "en-GB",
+  "targets": ["en-GB","en-US","es","fr","de","it","pt-BR","pt-PT","nl","pl","ar","hi"],
+  "source": "app/src/main/assets/i18n/en-GB.json",
+  "api": {"endpointEnv":"TIMESQUEST_TRANSLATION_URL","keyEnv":"TIMESQUEST_TRANSLATION_KEY"},
+  "protectedTerms": ["TimesQuest","Pip","Mosslight Meadow","Sunstone Sands","Mooncap Grove","Starlight Summit"],
+  "humanReviewRequired": ["educational terminology", "child narration", "voice command grammar", "gameplay and layout", "screenshots and store copy"],
+  "releaseLocales": ["en-GB"],
+  "note": "UK English is the implemented development language; release QA is pending. Other locales are scaffolds, not approved packs."
+}
