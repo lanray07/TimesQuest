@@ -13,11 +13,11 @@
   "selectedFireProfiles": 12,
   "iapSku": "timesquest.premium",
   "iapSubmission": "Submit to Test only",
-  "iapStatus": "Approved; TEST label",
+  "iapStatus": "Live; TEST label (verified in console 17 October 2026)",
   "testersAssigned": 1,
   "invitationsSent": 1,
   "testAccountDetails": "Owner supplied identity, explicitly confirmed rights/communications consent/age 18+, and dedicated TimesQuest group saved with the matching existing tester. Private identity omitted from repository.",
-  "purchaseChecks": "Owner approved full TimesQuest reset; uninstall succeeded and package is absent. Fire is locked at its PIN screen; awaiting owner unlock to install Amazon TEST 1 and begin purchase checks. No LAT purchase initiated.",
+  "purchaseChecks": "Amazon TEST 1 installed through com.amazon.venezia. Product/history retrieval passed. Entitlement now owned; explicit Restore retained ownership, and cold restart plus premium Build-a-Robot gameplay passed offline. Checkout displayed catalog GBP 4.99 and authentication; owner confirmation of verification/cost pending. Cancellation, reset/revocation, Kids pending and second-account coverage remain.",
   "proof": "artifacts/lat-setup/invitation-status.png",
   "sources": [
     "https://developer.amazon.com/docs/app-testing/live-app-testing-getting-started.html",
