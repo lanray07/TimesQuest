@@ -3,7 +3,7 @@ from pathlib import Path
 import hashlib,json,zipfile
 ROOT=Path(__file__).resolve().parents[1]
 out=ROOT/'artifacts/delivery';out.mkdir(parents=True,exist_ok=True)
-files=[]
+files=[ROOT/'README.md',ROOT/'PRIVACY.md']
 for folder in ['app/build/outputs/apk','docs','marketing/icons','marketing/store','marketing/screenshots/sources']:
     for path in (ROOT/folder).rglob('*'):
         if path.is_file() and path.suffix in ['.apk','.md','.json','.svg','.png','.xml']:files.append(path)

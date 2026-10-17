@@ -28,7 +28,7 @@
 | Standalone and Amazon lint | — | No issues |
 | Debug/release/instrumentation assembly | — | Passed |
 
-The 66 JVM executions include repeated scenarios under debug and release configurations. There are **86 successful test executions in total**, not 86 physical-device scenarios. Evidence is in `build-artifacts.json`, `artifacts/verification.json`, Gradle XML reports and logs. CI was prepared locally and has not run remotely.
+The 66 JVM executions include repeated scenarios under debug and release configurations. There are **86 successful local test executions in total**, not 86 physical-device scenarios. Evidence is in `build-artifacts.json`, `artifacts/verification.json`, Gradle XML reports and logs. GitHub CI is triggered by the authorised source push; consult Actions for its actual result.
 
 Robolectric uses framework shadows/native host graphics, not a Fire OS image. SDK host tests instrument Amazon classes so its bytecode can run on the JVM; the production SDK is unmodified. Upstream Amazon D8 stack-map warnings remain in assembly output. No deployed SDK/platform certification is inferred.
 
