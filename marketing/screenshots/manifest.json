@@ -1,23 +1,127 @@
 {
-  "status": "blocked — no running Android device available for authentic captures",
+  "status": "four authentic physical Fire tablet captures uploaded to unsubmitted Amazon draft; human locale review remains pending",
   "specificationSource": "https://developer.amazon.com/docs/app-submission/appstore-details.html",
   "checkedOn": "2026-10-17",
-  "amazonAllowedLandscapeSizes": [[800,480],[1024,600],[1280,720],[1280,800],[1920,1080],[1920,1200],[2560,1600]],
-  "tabletTarget": [1920,1200],
-  "phoneTarget": [720,1280],
-  "format": ["PNG","JPEG"],
+  "amazonAllowedLandscapeSizes": [
+    [
+      800,
+      480
+    ],
+    [
+      1024,
+      600
+    ],
+    [
+      1280,
+      720
+    ],
+    [
+      1280,
+      800
+    ],
+    [
+      1920,
+      1080
+    ],
+    [
+      1920,
+      1200
+    ],
+    [
+      2560,
+      1600
+    ]
+  ],
+  "tabletTarget": [
+    1920,
+    1200
+  ],
+  "phoneTarget": [
+    720,
+    1280
+  ],
+  "format": [
+    "PNG",
+    "JPEG"
+  ],
   "minimumScreenshots": 3,
   "maximumScreenshots": 10,
   "approvedLocales": [],
   "shots": [
-    {"id":"01-adventure","headline":"Multiplication Games for Kids","support":"Turn times tables into exciting adventures.","capture":"world map with real earned progress"},
-    {"id":"02-tables","headline":"Learn Times Tables Through Play","support":"Practise multiplication from 1 to 12.","capture":"a table practice question with visual explanation"},
-    {"id":"03-battles","headline":"Fun Math Battles & Adventures","support":"Solve multiplication challenges and defeat silly monsters.","capture":"Monster Math Battles after a correct answer"},
-    {"id":"04-racing","headline":"Multiplication Racing Game","support":"Race through colourful maths challenges.","capture":"Multiplication Racing with a genuine premium entitlement or clearly marked developer preview"},
-    {"id":"05-visual","headline":"Interactive Maths Learning","support":"Explore numbers through playful visual explanations.","capture":"hint with a real array and repeated addition"},
-    {"id":"06-voice","headline":"Voice-Guided Times Tables","support":"Listen to questions and practise answering aloud.","capture":"parent-enabled voice interface on a validated device","requires":"tested narration and recognition in that locale; omit or change answering claim if unavailable"},
-    {"id":"07-offline","headline":"Offline Multiplication Games","support":"Keep learning without an internet connection.","capture":"a mission running after verified airplane-mode relaunch"},
-    {"id":"08-progress","headline":"Track Multiplication Progress","support":"See achievements and identify tables to practise.","capture":"parent dashboard populated through real gameplay"}
+    {
+      "id": "01-adventure",
+      "headline": "Multiplication Games for Kids",
+      "support": "Turn times tables into exciting adventures.",
+      "capture": "world map with real earned progress"
+    },
+    {
+      "id": "02-tables",
+      "headline": "Learn Times Tables Through Play",
+      "support": "Practise multiplication from 1 to 12.",
+      "capture": "a table practice question with visual explanation"
+    },
+    {
+      "id": "03-battles",
+      "headline": "Fun Math Battles & Adventures",
+      "support": "Solve multiplication challenges and defeat silly monsters.",
+      "capture": "Monster Math Battles after a correct answer"
+    },
+    {
+      "id": "04-racing",
+      "headline": "Multiplication Racing Game",
+      "support": "Race through colourful maths challenges.",
+      "capture": "Multiplication Racing with a genuine premium entitlement or clearly marked developer preview"
+    },
+    {
+      "id": "05-visual",
+      "headline": "Interactive Maths Learning",
+      "support": "Explore numbers through playful visual explanations.",
+      "capture": "hint with a real array and repeated addition"
+    },
+    {
+      "id": "06-voice",
+      "headline": "Voice-Guided Times Tables",
+      "support": "Listen to questions and practise answering aloud.",
+      "capture": "parent-enabled voice interface on a validated device",
+      "requires": "tested narration and recognition in that locale; omit or change answering claim if unavailable"
+    },
+    {
+      "id": "07-offline",
+      "headline": "Offline Multiplication Games",
+      "support": "Keep learning without an internet connection.",
+      "capture": "a mission running after verified airplane-mode relaunch"
+    },
+    {
+      "id": "08-progress",
+      "headline": "Track Multiplication Progress",
+      "support": "See achievements and identify tables to practise.",
+      "capture": "parent dashboard populated through real gameplay"
+    },
+    {
+      "id": "09-treasure",
+      "headline": "Treasure Hunt",
+      "capture": "actual free Treasure Hunt question and locks on physical Fire tablet"
+    },
+    {
+      "id": "10-jump",
+      "headline": "Times Table Jump",
+      "capture": "actual free Times Table Jump question and stepping stones on physical Fire tablet"
+    }
   ],
-  "rules": ["Never substitute website or generated concept art for gameplay.","Capture each actual phone/tablet layout separately.","Hide personal store account details.","Keep source device, build, locale and test evidence beside each capture.","Do not remove the development watermark and present a debug entitlement as a purchased release.","Use only locales that have passed the language review workflow.","The phone target is an Android layout asset, not a promise of Amazon general-Android distribution."]
+  "rules": [
+    "Never substitute website or generated concept art for gameplay.",
+    "Capture each actual phone/tablet layout separately.",
+    "Hide personal store account details.",
+    "Keep source device, build, locale and test evidence beside each capture.",
+    "Do not remove the development watermark and present a debug entitlement as a purchased release.",
+    "Use only locales that have passed the language review workflow.",
+    "The phone target is an Android layout asset, not a promise of Amazon general-Android distribution."
+  ],
+  "draftCaptureEvidence": "docs/fire-device-qa-2026-10-17.md",
+  "draftUploadedShots": [
+    "01-adventure",
+    "03-battles",
+    "09-treasure",
+    "10-jump"
+  ]
 }

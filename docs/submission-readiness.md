@@ -39,14 +39,14 @@ The precise owner inputs are listed in [needed-from-owner.md](needed-from-owner.
 1. Cleared/replacement name, actual publisher/contact/domain/launch-country details, and launch languages.
 2. Actual App Tester/Live App Testing results. The public Amazon PEM is installed; the signed APK has been accepted into the Amazon draft, the SKU/price draft is complete, and all Amazon-supported countries are owner-approved. See amazon-console-draft.md.
 3. Owner backup of the dedicated TimesQuest signing key/password. Key creation, signed build, signature/alignment verification and draft upload are complete; see release-signing.md and signed-release.json. Only the standalone release remains unsigned.
-4. A real Fire/Android target for gameplay, lifecycle, offline, accessibility, speech and performance validation, plus authentic phone/tablet captures.
+4. Remaining device validation: a physical KFTRWI Fire now passed three free signed-release missions, hint/correction, force-stop recovery and an offline launch/question check. The isolated physical-device instrumentation also passed all six modes, first-answer tracking, rewards, save/reload and deletion. Four authentic tablet captures are uploaded and Amazon shows Ready to Submit. Accessibility, speech, performance, other models and store validation remain; see fire-device-qa-2026-10-17.md.
 5. Human educational/narration review and reviewed translations/evidence for additional launch languages.
 6. Final publisher/legal review and actual store checks. The SDK's code/telemetry paths have now been reviewed, all 39 privacy data types and applicable purposes answered, and the questionnaire saved for review. The in-app/public notices now describe SDK operational telemetry. This technical completion does not replace legal or physical-device/service validation; see sdk-privacy-disclosures.md.
 7. Explicit approval of the concrete signed app submission and public website deployment after verification.
 
 UK English is the base, not a completed human/device approval. US English remains an unreviewed debug preview. The other ten packs are incomplete; runtime preparation does not equal translation or validation. Unsupported Fire speech services retain touch/text fallback and must not advertise voice answering.
 
-The 16 screenshot SVGs remain editable blueprints. No authentic gameplay screenshot was fabricated or exported. Child/parent playtesting and physical-device profiling may identify further polish work that cannot be assessed locally.
+The 16 screenshot SVGs remain editable blueprints. Four authentic unedited physical Fire screenshots have now been captured and uploaded to the unsubmitted Amazon draft. Child/parent playtesting and physical-device profiling may identify further polish work that cannot be assessed locally.
 
 ## Artifacts
 

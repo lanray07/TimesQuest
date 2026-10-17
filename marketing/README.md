@@ -9,3 +9,5 @@ After device QA and human locale approval, add the locale to the screenshot mani
 Store icon geometry is `marketing/icons/icon.svg`, with the original Android vector preserved as `marketing/icons/launcher-legacy.xml`. Android now uses adaptive launcher resources under `app/src/main/res/mipmap-anydpi/` with foreground and monochrome drawable geometry. The deterministic icon export tool produces original 114px and 512px raster assets. Optional promotional artwork has not been exported; it must be 1024×500 under the current Amazon guidance and should not be a screenshot.
 
 No app name has been reserved and no public store page, domain, support address or publisher identity has been invented.
+
+Four authentic physical KFTRWI Fire captures (1920×1200) are now saved under `screenshots/captures/en-GB/` and uploaded to the owner-requested Amazon draft. Evidence and outstanding human review are in `docs/fire-device-qa-2026-10-17.md`. They are draft assets, not a full locale-review approval; `approvedLocales` remains unchanged.

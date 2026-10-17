@@ -1,6 +1,8 @@
 # Device and feature validation
 
-Date: 17 October 2026. No Android device was connected (`adb devices -l` returned an empty list). The two configured API 36 AVDs are CVMT_Tablet_API36 (1280×800, 160dpi) and LRM_API36. Normal emulator launch failed because the Android Emulator hypervisor driver is not installed. A software-emulation launch with `-accel off` also failed to produce an adb device; no runtime pass is claimed. Logs are in ignored `artifacts/`.
+Update: physical KFTRWI Fire testing and four authentic draft screenshots are now recorded in [fire-device-qa-2026-10-17.md](fire-device-qa-2026-10-17.md). Three free signed-release missions, hint/correction, force-stop recovery and an offline launch/question check passed. The original host-only baseline below remains historical; unexecuted procedures still require validation.
+
+Initial check on 17 October 2026: no Android device was connected (`adb devices -l` returned an empty list). The two configured API 36 AVDs are CVMT_Tablet_API36 (1280×800, 160dpi) and LRM_API36. Normal emulator launch failed because the Android Emulator hypervisor driver is not installed. A software-emulation launch with `-accel off` also failed to produce an adb device; no runtime pass is claimed. Logs are in ignored `artifacts/`.
 
 Do not change Windows virtualisation/security settings automatically. Use a connected test device, or have the machine owner configure a supported emulator accelerator using [Android's emulator guidance](https://developer.android.com/studio/run/emulator-acceleration). Real Fire testing remains necessary even after an Android emulator passes.
 
@@ -8,9 +10,9 @@ Host verification now passes 66 JVM executions across the core, standalone debug
 
 | Test | Required procedure | Current status |
 |---|---|---|
-| Six mission loops | Run the compiled instrumentation package against the isolated standalone .dev app | Compiled; not executed |
-| Offline learning | Install, disable connectivity, force-stop, relaunch, complete all available missions, inspect progress | Not executed |
-| Save interruption | Force-stop on wrong answer, hint, corrected answer and completion; verify no duplicate attempts/rewards | Core snapshot test executed; device flow pending |
+| Six mission loops | Run the compiled instrumentation package against the isolated standalone .dev app | Passed on physical KFTRWI; release free modes also completed through UI |
+| Offline learning | Install, disable connectivity, force-stop, relaunch, complete all available missions, inspect progress | Wi-Fi-off relaunch, saved progress and new answer passed on KFTRWI; full all-mode airplane check pending |
+| Save interruption | Force-stop on wrong answer, hint, corrected answer and completion; verify no duplicate attempts/rewards | Hinted/corrected question and completed rewards persisted on KFTRWI; isolated first-answer accounting test passed; remaining interruption matrix pending |
 | Fire HD 8 / HD 10 / supported newer models | Install on actual models, record Fire OS/API, density, RAM, target filtering | No model certified |
 | Android phone portrait / tablet landscape | Test text wrapping, back navigation, rotation and scroll recovery | Compiled; runtime pending |
 | Accessibility | TalkBack focus order, every button at least 48dp, 200% text, contrast, reduce motion | Code checks only; assistive-tech testing pending |

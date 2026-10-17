@@ -1,0 +1,19 @@
+{
+  "deviceModel": "KFTRWI",
+  "androidApi": 28,
+  "fireBuild": "PS7331.4463N",
+  "package": "com.timesquest.adventure",
+  "versionName": "0.1.1",
+  "versionCode": 2,
+  "apkSha256": "ada6347026f124ec27fd4aab306cf5524749f65674bdec2b0336ea376ce2bebc",
+  "locale": "en-GB",
+  "width": 1920,
+  "height": 1200,
+  "shot": "03-battles",
+  "pngSha256": "0aa00eaabdf049008c25d17661a4bc0ce91b9bf71644b9a02804ee1860bbb8c6",
+  "captureMethod": "adb exec-out screencap -p; unedited native physical-device PNG",
+  "copiedAt": "2026-10-17T08:18:59.845873+00:00",
+  "evidence": "docs/fire-device-qa-2026-10-17.md",
+  "draftOnly": true,
+  "humanLocaleReview": "pending; user explicitly requested draft capture/upload"
+}
